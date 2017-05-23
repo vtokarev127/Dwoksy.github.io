@@ -1,0 +1,83 @@
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav .owl-prev {
+    position: absolute;
+    background-image: url(../../img/Prev.png);
+    background-size: cover;
+    height: 108px;
+    width: 49px;
+    left: 0;
+    top: calc(50% - 109px);
+    margin: 5px;
+    padding: 4px 7px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; }
+    .owl-theme .owl-nav .owl-next {
+      position: absolute;
+      background-image: url(../../img/Prev.png);
+      background-size: cover;
+      height: 108px;
+      width: 49px;
+      right: 0;
+      transform: rotate(180deg);
+      top: calc(50% - 109px);
+      margin: 5px;
+      padding: 4px 7px;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    .owl-theme .owl-nav .owl-prev:not(.disabled):hover {
+      background-image: url(../../img/Prev-white.png);
+      transform: rotate(180deg);
+      text-decoration: none; }
+    .owl-theme .owl-nav .owl-next:not(.disabled):hover {
+      background-image: url(../../img/Prev-white.png);
+      transform: rotate(360deg);
+      text-decoration: none; }
+  .owl-theme .owl-nav .disabled {
+    opacity: .5;
+    cursor: default;
+  }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px 20px;
+      background: #fff;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active span {
+      position: relative;
+      background: transparent;
+      border: 1px solid #fff;
+      height: 15px;
+      width: 15px;
+      top: 2.5px
+     }
+    .owl-theme .owl-dots .owl-dot:not(.active):hover span {
+      background: #D6D6D6;
+    }

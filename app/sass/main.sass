@@ -1,0 +1,518 @@
+$orangeColor: #FF3D0E
+$whiteColor: #FFF
+$greyColor: #AEAEAE
+$greyTitleColor: #2F2F2F
+$greyWorkColor: #808080
+$greyBlogTitleColor: #5C5C5C
+$logoOrangeColor: #F73B0E
+$orangeBlogTitleColor: #FF8065
+$WorkDetailsBgColor: #FF3D0E
+
+body
+  font-family: "roboto", sans-serif
+  font-size: 14px
+  min-width: 320px
+  color: $greyColor
+  position: relative
+  line-height: 20px
+  -webkit-font-smoothing: antialised
+
+ul
+  font-size: 0
+  line-height: 0
+  letter-spacing: -1px
+
+h3
+  font-family: "myriadPro-light", sans-serif
+  font-size: 48px
+  color: $greyTitleColor
+  line-height: 48px
+
+.header
+  background-image: url(../img/bg-header.png)
+  background-size: cover
+
+.header__row
+  background-color: rgba(0,0,0, .55)
+
+.header__logo-container
+  float: left
+
+.header__logo
+  padding: 0
+  margin: 0
+  font-size: 30px
+  line-height: 20px
+  font-family: "myriadPro", sans-serif
+  color: $whiteColor
+  text-transform: uppercase
+  letter-spacing: 1px
+  padding: 41px 0
+
+.header__logo_orange
+  position: relative
+  color: $logoOrangeColor
+  font-size: 46px
+  line-height: 20px
+  top: 5px
+
+.header__toggle
+  display: none
+  float: right
+  cursor: pointer
+  margin: 38px 20px
+
+[class*="header__toggle-line"]
+  display: block
+  position: relative
+  margin: 7px 0
+  width: 25px
+  height: 1px
+  background-color: $whiteColor
+  transition: background-color 250ms linear
+
+.header__toggle-line_top
+  margin: 7px 0 0
+
+.header__toggle-line_bottom
+  margin: 0 0 7px
+
+.nav
+  float: right
+  padding: 0
+  margin: 0
+
+.nav
+  [class*="nav__item"]
+    margin: 0
+    padding: 0
+    cursor: pointer
+    list-style: none
+    display: inline-block
+    font-size: 11px
+    line-height: normal
+    letter-spacing: normal
+    text-transform: uppercase
+
+    &:hover
+      background-color: rgba(0,0,0, .55)
+      border-bottom: 2px solid $orangeColor
+      .nav__link
+        color: $whiteColor
+
+.nav__item_active
+  background-color: rgba(0,0,0, .55)
+  border-bottom: 2px solid $orangeColor
+  cursor: default
+
+.nav__item_arrow
+  position: relative
+  &::after
+    content: ""
+    position: absolute
+    left: calc(50% - 5px)
+    bottom: -11px
+    border: 4px solid transparent
+    border-top: 5px solid rgba(0,0,0, .55)
+  &:hover
+    &::after
+      border-top: 5px solid $orangeColor
+    .nav__link
+      color: $whiteColor
+
+.nav__item_arrow_active
+  position: relative
+  background-color: rgba(0,0,0, .55)
+  border-bottom: 2px solid $orangeColor
+  cursor: default
+  &::after
+    content: ""
+    position: absolute
+    left: calc(50% - 5px)
+    bottom: -11px
+    border: 4px solid transparent
+    border-top: 5px solid $orangeColor
+
+[class*="nav__link"]
+  display: inline-block
+  margin: 0
+  padding: 0
+  color: $greyColor
+  padding: 46px 15px
+  &:hover
+    text-decoration: none
+  &:active
+    text-decoration: none
+    color: $whiteColor
+  &:focus
+    text-decoration: none
+    color: $greyColor
+
+.nav__link_active
+  color: $whiteColor
+  cursor: default
+  &:hover
+    color: $whiteColor
+    text-decoration: none
+  &:active
+    text-decoration: none
+    color: $whiteColor
+  &:focus
+    text-decoration: none
+    color: $whiteColor
+
+.carousel__item
+  padding: 0
+  margin: 0
+  text-align: center
+  margin: 193px 168px 0
+
+.carousel__pre-title
+  padding: 0
+  margin: 0
+  text-transform: uppercase
+  font-family: "myriadPro-Light", sans-serif
+  font-size: 24px
+  line-height: 36px
+  color: $whiteColor
+  margin-bottom: 45px
+
+.carousel__title
+  padding: 0
+  margin: 0
+  text-transform: uppercase
+  font-family: "miryadPro-Light", sans-serif
+  font-weight: lighter
+  font-size: 80px
+  line-height: 74px
+  color: $whiteColor
+  margin-bottom: 48px
+
+.carousel__text
+  padding: 0
+  margin: 0
+  font-family: "miryadPro-Light", sans-serif
+  font-weight: lighter
+  font-size: 18px
+  line-height: 36px
+  color: $greyColor
+  margin-bottom: 228px
+
+.carousel__presents
+  text-transform: uppercase
+  font-family: "miryadPro-Light", sans-serif
+  font-weight: lighter
+  color: $whiteColor
+  font-size: 24px
+  line-height: 36px
+  margin-bottom: 44px
+
+.parallax-wrapper
+  z-index: 2
+
+.advantages
+  background-color: $whiteColor
+  text-align: center
+
+.advantages__wrapper
+  margin-top: 90px
+  padding-bottom: 86px
+  border-bottom: 1px solid $greyColor
+
+.advantages__item
+  .wrapper__img
+    display: inline-block
+    width: 110px
+    height: 110px
+    border-radius: 5px
+    margin-bottom: 33px
+  &:first-child
+    .wrapper__img
+      background: linear-gradient(to right, #9B6027, #62633E)
+  &:nth-child(2)
+    .wrapper__img
+      background: linear-gradient(to right, #009DC2, #00648E)
+  &:last-child
+    .wrapper__img
+      background: linear-gradient(to right, #702921, #6D2E27)
+
+.advantages__icon
+  font-size: 56px
+  color: $whiteColor
+  text-align: center
+  margin: 27.5px 27.5px
+
+.advantages__title
+  font-size: 25px
+  color: #555555
+  font-family: "myriadPro-Light", sans-serif
+  line-height: 24px
+  margin-bottom: 11px
+
+.advantages__text
+  font-size: 16px
+  font-family: "myriadPro",sans-serif
+
+.work
+  background-color: $whiteColor
+  margin-top: 90px
+  text-align: center
+
+.work__wrapper
+  padding-bottom: 54px
+  border-bottom: 1px solid $greyColor
+
+.work__title
+  margin-bottom: 29px
+
+.work__text
+  font-family: "myriadPro", sans-serif
+  padding: 0 170px
+  margin-bottom: 46px
+  font-size: 16px
+  line-height: 26px
+  color: $greyWorkColor
+
+.work__wrapper-img
+  position: relative
+  margin-bottom: 14px
+  &:after
+    content: ""
+    position: absolute
+    display: none
+    left: 0
+    top: 0
+    width: 100%
+    height: 98%
+    background-color: rgba(0,0,0, .55)
+    cursor: default
+  &:before
+    content: "View details"
+    display: none
+    position: absolute
+    left: calc(50% - 65.5px)
+    top: calc(50% - 27px)
+    font-size: 16px
+    line-height: 20px
+    padding: 17px 27px
+    border-radius: 2px
+    cursor: pointer
+    color: $whiteColor
+    background-color: $WorkDetailsBgColor
+    z-index: 1
+  &:hover
+    &:after
+      display: block
+    &:before
+      display: block
+
+.work-example__img
+  background-size: cover
+  width: 100%
+  height: 100%
+
+.work-example__title
+  font-size: 18px
+  line-height: 20px
+  color: $greyTitleColor
+  margin-bottom: 10px
+
+.like
+  cursor: pointer
+  display: inline-block
+  &:hover
+    .like__icon
+      color: $orangeColor
+    .like__value
+      color: $orangeColor
+
+.like__icon
+  font-size: 13px
+  line-height: 20px
+
+.blog__title
+  text-align: center
+  margin-top: 88px
+  margin-bottom: 40px
+
+.blog__item
+  text-align: center
+  margin-bottom: 90px
+
+.blog__carousel
+  position: relative
+  width: 100%
+  height: 100%
+  margin-bottom: 28px
+  &:hover
+    .owl-nav
+      display: block
+    .owl-dots
+      display: block
+  .owl-nav
+    display: none
+    margin-top: 10px
+    text-align: center
+    -webkit-tap-highlight-color: transparent
+    .owl-prev
+      position: absolute
+      background-image: url(../../img/blog-prev.png)
+      background-size: cover
+      height: 60px
+      width: 27px
+      left: 14px
+      top: calc(50% - 30px)
+      margin: 5px
+      padding: 4px 7px
+      display: inline-block
+      cursor: pointer
+      border-radius: 3px
+      &:not(.disabled):hover
+        background-image: url(../../img/blog-prev-white.png)
+        transform: rotate(180deg)
+        text-decoration: none
+    .owl-next
+      position: absolute
+      background-image: url(../../img/blog-prev.png)
+      background-size: cover
+      height: 60px
+      width: 27px
+      right: 14px
+      transform: rotate(180deg)
+      top: calc(50% - 30px)
+      margin: 5px
+      padding: 4px 7px
+      display: inline-block
+      cursor: pointer
+      border-radius: 3px
+      &:not(.disabled):hover
+        background-image: url(../../img/blog-prev-white.png)
+        transform: rotate(360deg)
+        text-decoration: none
+    .disabled
+      opacity: .5
+      cursor: default
+  .owl-dots
+    display: none
+    position: absolute
+    bottom: 0
+    left: calc(50% - 22.5px)
+    .owl-dot
+      span
+        margin: 0 5px 5px
+
+.blog__text-wrapper
+  text-align: center
+  max-width: 300px
+  margin: 0 25px
+
+.blog__low-title
+  display: inline-block
+  font-size: 18px
+  line-height: 21px
+  margin-bottom: 14px
+  color: $greyBlogTitleColor
+  &:hover
+    text-decoration: none
+    color: $orangeBlogTitleColor
+  &:active
+    text-decoration: none
+    color: $greyBlogTitleColor
+  &:focus
+    text-decoration: none
+    color: $orangeBlogTitleColor
+
+.blog__category
+  display: inline-block
+  padding-left: 3px
+  padding-right: 3px
+  font-size: 11px
+  line-height: 11px
+  padding-bottom: 15px
+  margin-bottom: 24px
+  border-bottom: 1px solid $greyColor
+
+.blog__text
+  color: #545454
+  margin-bottom: 25px
+
+.blog__low-text-wrapper
+  font-size: 11px
+  line-height: 11px
+  padding: 14px 0
+  border-bottom: 1px solid $greyColor
+  border-top: 1px solid $greyColor
+
+.blog__time
+  display: inline-block
+  margin-right: 15px
+
+.blog__comment
+  display: inline-block
+
+.blog__icon
+  margin-right: 5px
+
+.footer
+  text-align: center
+  background-image: url(../img/footer-bg.png)
+  background-size: cover
+
+.footer__title
+  margin-top: 68px
+  margin-bottom: 22px
+  font-size: 30px
+  line-height: 30px
+  color: $whiteColor
+  letter-spacing: 1px
+  font-family: "myriadPro-Light", sans-serif
+  text-transform: uppercase
+
+.footer__title_orange
+  position: relative
+  top: 2.5px
+  font-size: 40px
+  color: $orangeColor
+
+.footer__text
+  padding: 0 80px
+  margin-bottom: 28px
+
+.footer__social-icons
+  display: inline-block
+  border: 1px solid $greyColor
+  margin-bottom: 50px
+
+.footer__social-icon
+  padding: 15px 10px
+  font-size: 24px
+  line-height: 24px
+  color: $whiteColor
+  cursor: pointer
+  transition: .25s
+  &:first-child
+    padding-left: 20px
+  &:last-child
+    padding-right: 20px
+  &:hover
+    color: $orangeColor
+
+.footer__line
+  padding: 23px 0
+  background-color: rgba(0,0,0, .25)
+
+.scroll-top
+  display: none
+  background-color: rgba(0,0,0, .35)
+  border-radius: 2px
+  cursor: pointer
+  position: fixed
+  font-size: 35px
+  line-height: 30px
+  color: $whiteColor
+  right: 15px
+  bottom: 80px
+  padding: 11px 15px
+  z-index: 5
+  &:hover
+    background-color: $orangeColor

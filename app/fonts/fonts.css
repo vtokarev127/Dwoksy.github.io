@@ -1,0 +1,20 @@
+@font-face {
+  font-family: myriadPro;
+  src: url(MyriadPro-Regular.ttf);
+}
+@font-face {
+  font-family: myriadProBold;
+  src: url(MyriadPro-Bold.ttf);
+}
+@font-face {
+  font-family: myriadProLight;
+  src: url(MyriadPro-Light.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(Roboto-Bold.ttf);
+}
