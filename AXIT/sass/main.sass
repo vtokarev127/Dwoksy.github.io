@@ -1,0 +1,692 @@
+$whiteColor: #FFF
+$orangeColor: #DC6B20
+$greyColor: #A1A2A5
+$blackColor: #000
+$borderGreyColor: #B8B8B8
+$bgGreyColor: #F5F5F5
+$bgTabColor: #2F2F2F
+$bgPresentationOrange: #FF8C2D
+$bgBandColor: #FF9446
+$iconOrangeColor: #FF8B37
+$bgPriceColor: #2F2F30
+$bgPopualrColor: #F98E4F
+$bgQuoteColor: #F3F1F1
+$bgStylishColor: #9A9B9B
+$bgWhiteBorderColor: #F3F2F1
+$bgSubmitColor: #FF9C4A
+
+body
+  font-family: "openSans", sans-serif
+  font-size: 14px
+  min-width: 320px
+  color: $greyColor
+  position: relative
+  line-height: 20px
+  -webkit-font-smoothing: antialised
+
+h2
+  margin: 0
+  padding: 0
+  font-family: "raleway", sans-serif
+  font-size: 36px
+  line-height: 43px
+  color: $blackColor
+  text-transform: uppercase
+  position: relative
+  margin-top: 104px
+  text-align: center
+  padding: 26px
+  margin: 27px
+  &:after
+    display: block
+    position: absolute
+    content: ""
+    width: 64px
+    height: 2px
+    background-color: $bgBandColor
+    left: calc(50% - 32px)
+    bottom: 0
+
+.text
+  font-size: 14px
+  line-height: 20px
+  font-family: "openSans"
+  color: $greyColor
+  margin: 0
+  padding: 0
+
+.title
+  font-family: "openSansBold", sans-serif
+  font-size: 20px
+  line-height: 43px
+  color: $blackColor
+
+.header
+  background: $blackColor
+
+.header__toggle
+  display: none
+  float: right
+  cursor: pointer
+  margin: 27px 20px
+
+[class*="header__toggle-line"]
+  display: block
+  position: relative
+  margin: 7px 0
+  width: 25px
+  height: 1px
+  background-color: $whiteColor
+  transition: background-color 250ms linear
+
+.header__toggle-line_top
+  margin: 7px 0 0
+
+.header__toggle-line_bottom
+  margin: 0 0 7px
+
+.header-logo
+  float: left
+  font-size: 29px
+  line-height: 29px
+  margin: 21px 0
+  padding: 0
+  text-transform: uppercase
+  &_white
+    color: $whiteColor
+  &_orange
+    color: $orangeColor
+
+.nav
+  float: right
+  margin: 25px 0
+
+.nav__item
+  display: inline-block
+  list-style: none
+  margin: 0 23px
+
+.nav__link
+  color: $greyColor
+  font-size: 14px
+  line-height: 14px
+  &:hover
+    color: inherit
+    text-decoration: none
+    background-color: transparent
+  &:active
+    color: inherit
+    text-decoration: none
+    background-color: transparent
+  &:visited
+    color: inherit
+    text-decoration: none
+    background-color: transparent
+  &:focus
+    color: inherit
+    text-decoration: none
+    background-color: transparent
+
+.greeting
+  position: relative
+  background-image: url(../img/bg-present.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+
+.greeting__column
+  max-width: 540px
+
+.greeting__title
+  font-size: 60px
+  text-transform: uppercase
+  margin: 110px 0 30px
+  &_white
+    color: $whiteColor
+  &_orange
+    color: $orangeColor
+
+.greeting__slogan
+  position: relative
+  font-size: 36px
+  line-height: 38px
+  color: $whiteColor
+  text-transform: uppercase
+  margin: 0 0 40px
+  padding: 0 0 40px
+  &:after
+    position: absolute
+    display: block
+    content: ""
+    bottom: 0
+    left: 2px
+    width: 64px
+    height: 2px
+    background-color: $whiteColor
+
+.greeting__text
+  font-family: "raleway", sans-serif
+  font-size: 16px
+  line-height: 23px
+  margin: 0 0 44px
+
+.greeting__btn
+  font-family: "openSansSemibold", sans-serif
+  display: inline-block
+  color: $whiteColor
+  font-size: 15px
+  line-height: auto
+  padding: 13px 30px
+  border: solid 1px $whiteColor
+  box-shadow: inset 0 0 0 1px rgba(0,0,0, .35)
+  margin: 0 0 140px
+  &:hover
+    color: $whiteColor
+    text-decoration: none
+    background-color: transparent
+  &:active
+    color: $whiteColor
+    text-decoration: none
+    background-color: transparent
+  &:visited
+    color: $whiteColor
+    text-decoration: none
+    background-color: transparent
+  &:focus
+    color: $whiteColor
+    text-decoration: none
+    background-color: transparent
+
+.social
+  position: relative
+  background-color: $whiteColor
+  border: 1px solid $borderGreyColor
+  box-shadow: -1px 0 3px 0 rgba(0,0,0, .38)
+
+.social__column-left
+  max-width: 350px
+  float: left
+  margin: 20px 0 23px
+
+.social__column-right
+  float: right
+  margin: 30px 0 31px
+
+.social__title
+  font-family: "openSansBold", sans-serif
+  font-size: 20px
+  line-height: auto
+  color: #333
+  margin: 0 0 12px
+
+.social__icons
+  font-size: 48px
+  line-height: auto
+
+.social__icon
+  color: #ccc
+  margin: 0 30px
+  transition: .25s
+  &:hover
+    color: $bgPresentationOrange
+  &:active
+    color: $bgPresentationOrange
+  &:focus
+    color: $bgPresentationOrange
+  &:first-child
+    margin-left: 0
+  &:last-child
+    margin-right: 0
+
+.presentation
+  background-color: $bgGreyColor
+
+.presentation__tab-list
+  float: left
+  margin-top: 144px
+  margin-bottom: 114px
+
+.presentation__tab
+  display: block
+  padding: 50px 36px 49px 34px
+  background-color: $bgTabColor
+  color: $whiteColor
+  font-size: 15px
+  line-height: 20px
+  font-family: "openSansBold", sans-serif
+  margin-bottom: 1px
+  box-shadow: 0 0 2px rgba(0,0,0, .35)
+  cursor: pointer
+  transition: .25s
+  &:first-child
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+  &:last-child
+    border-bottom-left-radius: 3px
+    border-bottom-right-radius: 3px
+  &.active
+    cursor: default
+    background-color: $bgPresentationOrange
+
+.presentation__tab-items
+  float: left
+  margin-top: 142px
+  margin-left: 99px
+
+.presentation__item
+  max-width: 480px
+  margin-bottom: 60px
+
+.presentation__title
+  margin: 0
+  padding: 0
+  margin-bottom: 56px
+
+.presentation__text
+  margin-bottom: 29px
+  &:last-of-type
+    margin-bottom: 52px
+
+.presentation__btn
+  font-size: 15px
+  line-height: 20px
+  font-family: "openSansSemibold", sans-serif
+  padding: 16px 24px
+  background-color: $bgPresentationOrange
+  border-radius: 3px
+  color: $whiteColor
+  box-shadow: 0 1px 1px rgba(0,0,0, .15)
+  transition: .25s
+  &:hover
+    color: $whiteColor
+    text-decoration: none
+    background-color: $bgTabColor
+  &:active
+    color: $whiteColor
+    text-decoration: none
+    background-color: $bgPresentationOrange
+  &:focus
+    color: $whiteColor
+    text-decoration: none
+    background-color: $bgPresentationOrange
+
+.presentation__images
+  float: left
+  margin-left: 95px
+  margin-top: 195px
+
+.sub-list__img
+  float: left
+  margin-top: 127px
+  margin-bottom: 166px
+  box-shadow: 0 24px 40px rgba(0,0,0, .35)
+
+.sub-list__image
+  background-size: cover
+  width: 453px
+  height: 303px
+
+.sub-list__column
+  float: left
+  max-width: 390px
+  margin-top: 105px
+  margin-left: 193px
+
+.sub-list__title
+  margin: 0
+  padding: 0
+  position: relative
+  padding-bottom: 19px
+  margin-bottom: 30px
+  &:after
+    display: block
+    content: ""
+    width: 64px
+    height: 2px
+    background-color: $bgBandColor
+    position: absolute
+    bottom: 0
+
+.sub-list__text
+  margin-bottom: 29px
+
+.sub-list__upload
+  position: relative
+  padding-left: 71px
+
+.sub-list__download
+  position: relative
+  padding-left: 71px
+
+.sub-list__low-title
+  font-size: 14px
+  line-height: 17px
+  font-family: "openSansSemibold", sans-serif
+  color: $blackColor
+  margin-bottom: 5px
+
+.sub-list__low-text
+  margin-bottom: 36px
+
+.sub-list__icon
+  position: absolute
+  left: -29px
+  top: 5px
+  padding: 10px 9px
+  border: 2px solid $iconOrangeColor
+  border-radius: 50%
+  font-size: 16px
+  color: $iconOrangeColor
+
+.picture
+  background-color: $bgGreyColor
+
+.picture__column
+  max-width: 430px
+  float: left
+  margin-top: 105px
+  margin-right: 196px
+
+.picture__title
+  padding: 0
+  margin: 0
+  position: relative
+  padding-bottom: 19px
+  margin-bottom: 30px
+  &:after
+    position: absolute
+    display: block
+    content: ""
+    width: 64px
+    height: 2px
+    bottom: 0
+    background-color: $bgBandColor
+
+.picture__text
+  margin-bottom: 25px
+
+.picture__img
+  float: left
+  margin-top: 90px
+  margin-bottom: 130px
+  box-shadow: 0 24px 40px rgba(0,0,0, .35)
+
+.picture__image
+  background-size: cover
+  width: 453px
+  height: 303px
+
+.awesome__text
+  text-align: center
+
+.awesome__item
+  text-align: center
+  margin-top: 78px
+  margin-bottom: 103px
+
+.awesome__icon
+  display: inline-block
+  font-size: 32px
+  line-height: auto
+  color: $iconOrangeColor
+  border: 2px solid $iconOrangeColor
+  border-radius: 50%
+  margin-left: -13px
+  margin-bottom: 28px
+
+.fa-lightbulb-o
+  padding: 17px 24px
+
+.fa-keyboard-o
+  padding: 17px 17px
+
+.fa-bolt
+  padding: 17px 26px
+
+.awesome__low-title
+  margin: 0
+  padding: 0
+  font-family: "openSansBold"
+  font-size: 20px
+  line-height: 24px
+  color: $blackColor
+  margin-bottom: 25px
+
+.price
+  background-color: $bgGreyColor
+
+.price__high-text
+  text-align: center
+
+.price__item
+  margin-top: 80px
+  margin-bottom: 96px
+  text-align: center
+  &:first-of-type
+    margin-top: 115px
+  &:last-child
+    margin-top: 115px
+
+.price__low-title
+  font-size: 20px
+  line-height: 24px
+  padding: 20px 0
+  color: $whiteColor
+  background-color: $bgPriceColor
+  font-family: "openSansBold", sans-serif
+  margin-bottom: 1px
+
+.price__value
+  background-color: $bgPriceColor
+  font-family: "ralewayBold", sans-serif
+  color: $whiteColor
+  font-size: 35px
+  line-height: 24px
+  padding: 37px 0 14px
+  margin-bottom: 1px
+
+.price__number
+  font-size: 94px
+
+.price__limit
+  background: $bgPriceColor
+  line-height: 24px
+  padding: 12px 0 17px
+  font-style: italic
+  font-family: "openSansSemibold", sans-serif
+
+.price__popular
+  font-family: "openSansBold", sans-serif
+  line-height: 24px
+  color: $whiteColor
+  background-color: $bgPopualrColor
+  padding: 9px 0 7px
+  text-transform: uppercase
+  &_disabled
+    padding: 0
+    height: 5px
+    background-color: $bgPopualrColor
+
+.price__text
+  background-color: $whiteColor
+  margin-bottom: 1px
+  text-transform: uppercase
+  line-height: 24px
+  padding: 10px 0
+
+.review__text
+  text-align: center
+
+.review__item
+  margin-top: 52px
+  margin-bottom: 101px
+
+.review__quote
+  position: relative
+  background-color: $bgQuoteColor
+  padding: 24px 12px 26px
+  font-style: italic
+  border-radius: 2px
+  line-height: auto
+  margin-bottom: 23px
+  &::after
+    content: ""
+    position: absolute
+    left: 21px
+    bottom: -33px
+    border: 14px solid transparent
+    border-top: 20px solid $bgQuoteColor
+
+.review__image
+  display: block
+  float: left
+  width: 70px
+  height: 70px
+  border-radius: 50%
+  background-size: cover
+  background-color: #9A9B9B
+
+.review__column
+  float: left
+  margin: 15px 15px
+
+.review__name
+  font-size: 20px
+  line-height: auto
+  color: $blackColor
+  font-family: "openSansBold", sans-serif
+  margin-bottom: 7px
+
+.review__rank
+  line-height: auto
+
+.stylish
+  background-image: url(../img/stylish-bg.jpg)
+  background-size: cover
+
+.stylish__title_white
+  color: $whiteColor
+  &::after
+    background-color: $whiteColor
+    box-shadow: 0 1px 3px rgba(0,0,0, .35)
+
+.stylish__text
+  text-align: center
+  margin-bottom: 30px
+
+.stylish__container-btn
+  text-align: center
+
+.stylish__btn
+  display: inline-block
+  color: $whiteColor
+  font-family: "openSansSemibold",sans-serif
+  font-size: 15px
+  line-height: auto
+  padding: 13px 30px
+  text-align: center
+  border: 1px solid $bgWhiteBorderColor
+  box-shadow: inset 0 0 0 1px rgba(0,0,0, .15)
+  margin-bottom: 63px
+  &:hover
+    color: $whiteColor
+    text-decoration: none
+    background-color: transparent
+  &:active
+    color: $whiteColor
+    text-decoration: none
+    background-color: transparent
+  &:visited
+    color: $whiteColor
+    text-decoration: none
+    background-color: transparent
+  &:focus
+    color: $whiteColor
+    text-decoration: none
+    background-color: transparent
+
+.contact-us__text
+  text-align: center
+
+.contact-us__form
+  margin-top: 91px
+
+.contact-us__column
+  display: block
+  float: left
+  max-width: 527px
+  width: 100%
+  margin-right: 67px
+
+input
+  display: block
+  width: 100%
+  margin-bottom: 40px
+  border: none
+  padding: 0 10px 12px
+  border-bottom: 1px solid #D7D8D8
+
+textarea
+  display: block
+  float: left
+  max-width: 527px
+  width: 100%
+  height: 178px
+  border: none
+  border-bottom: 1px solid #D7D8D8
+  margin-bottom: 42px
+  padding: 0 13px 0
+
+.contact-us__container-btn
+  text-align: center
+
+.contact-us__submit
+  display: inline-block
+  width: auto
+  background-color: $bgSubmitColor
+  font-size: 15px
+  line-height: auto
+  color: $whiteColor
+  border-radius: 3px
+  padding: 16px 22px
+  font-family: "openSansSemibold", sans-serif
+  margin-bottom: 80px
+
+.footer
+  background-color: $blackColor
+
+.footer__social-icons
+  margin-top: 21px
+  margin-bottom: 15px
+  text-align: center
+  font-size: 24px
+  line-height: auto
+
+.footer__icon
+  color: $whiteColor
+  margin: 0
+  padding: 0
+  margin-right: 32px
+  &:hover
+    color: $bgPresentationOrange
+  &:active
+    color: $bgPresentationOrange
+  &:focus
+    color: $bgPresentationOrange
+  &:last-child
+    margin-right: 0
+
+.footer__copyright
+  text-align: center
+  margin-bottom: 14px
+
+.scroll-top__arrow
+  display: none
+  font-size: 40px
+  padding: 10px 10px
+  position: fixed
+  background-color: $bgPresentationOrange
+  border-radius: 50%
+  color: $whiteColor
+  right: 40px
+  bottom: 30px
+  cursor: pointer

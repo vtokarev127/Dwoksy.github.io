@@ -1,0 +1,24 @@
+@font-face {
+  font-family: openSans;
+  src: url(OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: openSansBold;
+  src: url(OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: openSansSemibold;
+  src: url(OpenSans-Semibold.ttf);
+}
+@font-face {
+  font-family: raleway;
+  src: url(raleway-Regular.ttf);
+}
+@font-face {
+  font-family: ralewayBold;
+  src: url(raleway-Bold.ttf);
+}
+@font-face {
+  font-family: ralewayLight;
+  src: url(raleway-Light.ttf);
+}

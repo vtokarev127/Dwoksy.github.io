@@ -1,0 +1,330 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .social__icons {
+    font-size: 42px;
+  }
+  .social__column-left {
+    text-align: center;
+    max-width: 1200px;
+    float: none;
+    margin: 20px 0 23px;
+  }
+  .social__column-right {
+    text-align: center;
+    float: none;
+    margin: 0 0 31px;
+  }
+  .presentation__tab-list {
+    text-align: center;
+    float: none;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .presentation__tab {
+    margin: 0;
+    display: inline-block;
+    padding: 30px 10% 30px;
+    background-color: #2F2F2F;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .presentation__tab-items {
+    float: left;
+    width: 38%;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .presentation__images {
+    width: 38%;
+    float: left;
+    margin-left: 95px;
+    margin-top: 100px;
+  }
+  .sub-list__img {
+    width: 38%;
+    float: left;
+    margin-top: 127px;
+    margin-bottom: 166px;
+  }
+  .sub-list__column {
+    width: 38%;
+    float: left;
+    max-width: 390px;
+    margin-top: 105px;
+    margin-left: 150px;
+  }
+  .picture__column {
+    width: 38%;
+    max-width: 430px;
+    float: left;
+    margin-top: 105px;
+    margin-right: 150px;
+  }
+  .picture__img {
+    width: 38%;
+    float: left;
+    margin-top: 90px;
+    margin-bottom: 130px;
+  }
+  .contact-us__column {
+    float: none;
+    max-width: 1200px;
+    width: 98%;
+    margin-right: 0;
+  }
+  textarea {
+    float: none;
+    max-width: 1200px;
+    width: 98%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .sub-list__img {
+    width: auto;
+    text-align: center;
+    float: none;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .sub-list__image {
+    width: 100%;
+    height: 100%;
+  }
+  .sub-list__column {
+    width: auto;
+    text-align: center;
+    float: none;
+    max-width: 992px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .sub-list__title::after {
+    left: calc(50% - 32px);
+  }
+  .sub-list__low-text {
+    margin-bottom: 20px;
+  }
+  .sub-list__icon {
+    left: 14px;
+    top: 13px;
+  }
+  .picture__column {
+    width: auto;
+    text-align: center;
+    max-width: 992px;
+    float: none;
+    margin-top: 50px;
+    margin-right: 0;
+  }
+  .picture__img {
+    width: auto;
+    float: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .picture__image {
+    width: 100%;
+    height: 100%;
+  }
+  .picture__title::after {
+    left: calc(50% - 32px);
+  }
+  .awesome__item {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .awesome__item:last-child {
+    margin-bottom: 50px;
+  }
+  .price__item:first-of-type {
+    margin-top: 50px;
+  }
+  .price__item {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .price__item:last-child {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .review__image {
+    display: inline-block;
+    float: none;
+  }
+  .review__column {
+    display: inline-block;
+    position: relative;
+    top: 17px;
+    float: none;
+    margin: 0px 15px;
+  }
+  .review__item {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .review__item:last-child {
+    margin-bottom: 50px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  .header-logo {
+    margin: 11px 0 11px 55px;
+  }
+  .nav {
+    display: none;
+    background-color: #000;
+    border-top: 1px solid #fff;
+    width: 100%;
+    top: 27px;
+    left: 0;
+    position: absolute;
+  }
+  .nav__item {
+    display: block;
+    margin: 30px 23px;
+  }
+  .nav__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .header__toggle {
+    display: block;
+    margin: 11px 20px;
+  }
+  .greeting {
+    text-align: center;
+  }
+  .greeting__column {
+    max-width: 720px;
+  }
+  .greeting__slogan::after {
+    left: calc(50% - 32px);
+  }
+  .social__column-left {
+    text-align: center;
+    max-width: 720px;
+    float: none;
+    margin: 20px 0 23px;
+  }
+  .social__column-right {
+    text-align: center;
+    float: none;
+    margin: 0 0 31px;
+  }
+  .social__icons {
+    font-size: 36px;
+    line-height: auto;
+  }
+  .social__icon {
+    margin: 0 13px;
+  }
+  .presentation {
+    position: relative;
+  }
+  .presentation__tab-items {
+    text-align: center;
+    float: none;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .presentation__item {
+    max-width: 768px;
+    margin-bottom: 50px;
+  }
+  .presentation__title {
+    line-height: 24px;
+    margin-bottom: 275px
+  }
+  .presentation__images {
+    position: absolute;
+    width: auto;
+    float: none;
+    margin-left: 0;
+    margin-top: 0;
+    top: 218px;
+    left: calc(50% - 161px);
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .social__icon {
+    margin: 0 4px;
+  }
+  .social__icons {
+    font-size: 30px;
+  }
+  .footer__icon {
+    margin-right: 16px;
+  }
+  .presentation__tab {
+    margin: 0;
+    display: inline-block;
+    padding: 30px 9% 30px;
+    background-color: #2F2F2F;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .presentation__title {
+    margin-bottom: 290px;
+  }
+  .presentation__images {
+    top: 236px;
+  }
+  .scroll-top__arrow {
+    right: 20px;
+    bottom: 100px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
