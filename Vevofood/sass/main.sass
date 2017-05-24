@@ -200,7 +200,7 @@ body
 
 .feature
 	background-color: $accent-second
-	padding: 5% 0
+	padding: 5% 0 3%
 	&-hl
 		border-radius: 40px
 		background-color: #fff
@@ -226,12 +226,38 @@ body
 				font-size: 14px
 				line-height: 1.4
 				color: #fff
-				background-color: rgba(#fff, .15)
-				margin: 6px
+				margin: 10px
 				padding: 10px 0
+				&_bg-opacity
+					font-size: 14px
+					line-height: 1.4
+					color: #fff
+					margin: 12px
+					padding: 10px 0
+					background-color: rgba(#fff, .15)
+				&_map
+					font-size: 14px
+					line-height: 1.4
+					color: #fff
+					margin: 0
+					padding: 0
+					&:last-child
+						margin-bottom: 0
+					&:first-child
+						margin-top: 0
 				&:last-child
 					margin-bottom: 0
 				&:first-child
 					margin-top: 0
+			.phone
+				line-height: 1
+				padding: 3px 0
+				margin: 0
+				a
+					font-size: 26px
+					color: #fff
+			a
+				font-size: 14px
+				color: #fff
 
 @import "media" // Всегда в конце
