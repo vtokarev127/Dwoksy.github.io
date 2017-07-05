@@ -1,0 +1,32 @@
+body, html, #content {
+	background-color: #eaeaea;
+}
+
+table {
+	background-color: #666;
+}
+.cell {
+	padding: 4px;
+	text-align: center;
+	border-left: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+.cell:last-child {
+	border-right: 1px solid #666;
+}
+.row:nth-child(even){
+	background-color: #eee;
+}
+.row:nth-child(odd) {
+	background-color: #A3A3A3;
+}
+.row:first-child {
+	border-top: 1px solid #666;
+}
+.filter {
+	padding: 15px 0;
+}
+.search-field {
+	padding: 7px;
+	font-size: 16px;
+}
