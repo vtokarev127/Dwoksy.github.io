@@ -1,0 +1,272 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1500px)
+	.logo
+		width: 33%
+	.logo__text
+		width: 41%
+		margin-left: 20px
+	.top-nav
+		margin-left: 50px
+	.top-nav__item a
+		padding: 10px 23px
+	.login
+		margin-left: 20px
+	.contacts ul
+		display: block
+		float: left
+	.contacts__item a
+		padding: 7px 28px
+	.contacts__item:last-of-type
+		padding: 0
+		display: block
+	.support 
+		display: block
+		margin-left: 0
+		float: right
+		margin-top: 16px
+	.exchange .col
+		width: 32%
+		margin-right: 2%
+	.exchange .line__btn p
+		width: 78%
+	.contentzone
+		width: 75%
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.header
+		padding-top: 77px
+		padding-bottom: 42px
+		position: relative
+	.logo
+		width: 50%
+	.logo__text
+		margin-left: 30px
+	.top-nav
+		margin: 0
+		position: absolute
+		width: 100%
+		left: 0
+		top: 18px
+		text-align: center
+	.top-nav__item a
+		padding: 10px 50px
+		display: inline-block
+	.login
+		margin-left: 0
+		display: block
+		float: right
+	.contacts__item
+		font-size: 15px
+	.contacts__item a
+		padding: 0px 20px
+	.support
+		margin-top: 5px
+	.exchange .col
+		width: 100%
+		margin-right: 0
+		margin-bottom: 28px
+	.exchange .line__btn p
+		width: 92.8%
+	.lefthomecol.col.center
+		width: 47.5%
+		margin: 0
+		margin-right: 5%
+	.center .line p
+		width: 83%
+	.lefthomecol.col.right
+		width: 47.5%
+		margin: 0
+	.right .line p
+		width: 83%
+	.contentzone
+		width: 70%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.top-nav__item a
+		padding: 10px 46px
+	.logo
+		width: 55%
+	.exchange__body
+		padding: 17px 20px
+	.exchange .line__btn p
+		width: 90.9%
+	.right .line p
+		width: 80%
+	.center .line p
+		width: 80%
+	.lefthomecol.col.center
+		width: 48.5%
+		margin-right: 3%
+	.lefthomecol.col.right
+		width: 48.5%
+	.contentzone
+		width: 60%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.row
+		margin: 0
+	.top-nav__item:first-child a
+		padding-left: 0
+	.top-nav__item a
+		padding: 10px 52px
+	.top-nav__item:last-child a
+		padding-right: 0
+	.exchange .line__btn p
+		width: 90.6%
+	.center .line p
+		width: 79%
+	.right .line p
+		width: 79%
+	.left-col br
+		display: block
+	.right-col__item a
+		padding: 0
+	.right-col__item
+		display: block
+		text-align: right
+	.reserve
+		margin-bottom: 95px
+	.contentzone
+		width: 100%
+		float: none
+	.sidebar
+		float: none
+		margin: 0 auto
+		margin-top: 20px
+		margin-bottom: 80px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 759px)
+	.logo
+		position: absolute
+		left: 15px
+		top: 72px
+		width: 100%
+		img
+			width: 157px
+	.logo__text
+		margin-left: 15px
+		font-size: 12px
+	.top-nav
+		position: static
+		text-align: left
+		float: left
+		width: auto
+		margin-bottom: 67px
+	.contacts__item:nth-of-type(3)
+		display: none
+	.contacts__item:last-of-type
+		margin-top: 11px
+	.contacts__item a
+		padding: 0 19px
+	.top-nav__menu
+		display: block
+	.top-nav ul
+		display: none
+		position: absolute
+		background-color: #035BAE
+		width: 290px
+		top: 71px
+		border-radius: 5px
+		padding-top: 10px
+		padding-bottom: 10px
+		&::after
+			display: block
+	.top-nav__item a
+		padding: 8px 0 8px 24px
+		color: #FFF
+		display: block
+	.header
+		padding-top: 11px
+		padding-bottom: 26px
+	.top-nav__item
+		display: block
+	.top-nav__item:first-child a
+		padding: 8px 0 8px 24px
+	.support
+		display: block
+		width: 100%
+		margin-top: 13px
+	.support__btn
+		display: block
+		text-align: center
+	.exchange br
+		display: block
+	.exchange__title img
+		padding-left: 0
+	.exchange__title
+		margin-bottom: 30px
+	.exchange .widt
+		padding: 13px 12px
+	.exchange__body
+		padding: 17px 12px
+	.exchange .line__btn p
+		width: 75%
+		padding: 11px 8px 13.5px
+	.righthomecolvn.col.right
+		display: none
+	.lefthomecol.col.center
+		width: 100%
+		margin-right: 0
+	.fcwidgetvn p
+		font-size: 16px
+		line-height: 25px
+	.reserve__item
+		margin: 0px 12px
+	.footer
+		position: relative
+	.right-col__item
+		display: inline-block
+	.right-col__item:first-child a
+		padding-left: 0
+	.right-col__item a
+		padding: 0 30px
+	.right-col
+		text-align: center
+		position: absolute
+		width: 100%
+		top: -50px
+		left: 0
+	.wrapper
+		padding-bottom: 20px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+@media only screen and (min-width : 1500px)
+	.container
+		width: 1470px
+
