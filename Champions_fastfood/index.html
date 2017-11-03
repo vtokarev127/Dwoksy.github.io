@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<div class="preloader"><div class="pulse"></div></div>
+			
+	<header class="header">
+		<div class="header__top-line">
+			<div class="container">
+				<div class="row">
+
+					<div class="left-col">
+						<div class="geoloc">
+							<img src="img/red-location-icon-1.png" alt="Местоположение">
+							<a href="#">Атырау</a>
+						</div>
+						<div class="social">
+							<a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
+							<a href="#"><img src="img/instagram.png" alt="instagram"></a>
+							<a href="#"><img src="img/facebook.png" alt="facebook"></a>
+						</div>
+					</div>
+					<div class="center-col">
+						<img src="img/logo.png" alt="Champions fastfood">
+						<div class="logo-text">
+							<h1>Champions fastfood</h1>
+							<h2>Сервис доставки еды в Атырау</h2>
+						</div>
+					</div>
+					<div class="right-col">
+						<img src="img/phone.png" alt="Наш телефон">
+						<div class="number">
+							<p>+7 776 077 80 90</p>
+							<a href="#">Заказать бесплатный звонок</a>
+						</div>
+						<div class="basket">
+							<a href="#">
+								<img src="img/cart.png" alt="Тележка">
+								<p class="basket-text">Корзина</p>
+								<span class="times">4 шт.</span>
+							</a>
+							<div class="basket_menu">
+								<div class="basket_top-line">
+									<img class="cart" src="img/cart_menu.png" alt="Тележка">
+									<p class="basket-title">Ваш заказ</p>
+									<img class="arrow" src="img/arrow.png" alt="Стрелка">
+								</div>
+								<table>
+									<tr class="table-row">
+										<td class="table-img"><img src="img/doner_menu.png" alt="Донер"></td>
+										<td class="table-name">Говяжий донер</td>
+										<td class="table-index"><span class="minus">-</span> 1 <span class="plus">+</span></td>
+										<td class="table-price">700тг</td>
+									</tr>
+									<tr class="table-row">
+										<td class="table-img"><img src="img/burger_menu.png" alt="Донер"></td>
+										<td class="table-name">Бургер</td>
+										<td class="table-index"><span class="minus">-</span> 2 <span class="plus">+</span></td>
+										<td class="table-price">1000тг</td>
+									</tr>
+									<tr class="table-row">
+										<td class="table-img"><img src="img/pizza_menu.png" alt="Донер"></td>
+										<td class="table-name">Маргарита</td>
+										<td class="table-index"><span class="minus">-</span> 1 <span class="plus">+</span></td>
+										<td class="table-price">1200тг</td>
+									</tr>
+									<tr class="table-row">
+										<td class="table-img"><img src="img/cola_menu.png" alt="Донер"></td>
+										<td class="table-name">Cola 0.3l</td>
+										<td class="table-index"><span class="minus">-</span> 3 <span class="plus">+</span></td>
+										<td class="table-price">450тг</td>
+									</tr>
+									<tr class="table-row">
+										<td class="table-name_red" colspan="3">Итого:</td>
+										<td class="table-price_red">3350тг</td>
+									</tr>
+								</table>
+								<a class="order" href="#">Оформить заказ</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="menu">
+			<div class="container">
+				<div class="row">
+					
+					<ul>
+						<li class="menu-item">
+							<a href="#"><img src="img/doner.png" alt="Донер"><p>Донеры</p></a>
+						</li>
+						<li class="menu-item">
+							<a href="#"><img src="img/cola.png" alt="Напитки"><p>Напитки</p></a>
+						</li>
+						<li class="menu-item">
+							<a href="#"><img src="img/burger.png" alt="Комбо"><p>Комбо</p></a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="banner">
+		<div class="container">
+			<div class="row">
+				
+				<div class="banner__title">
+					<div class="bg-color">
+						<p>При заказе 2 донеров</p>
+					</div>
+					<span>успей купить</span>
+				</div>
+				
+				<div class="banner__content row">
+					<div class="form-wrapper">
+						<div class="form">
+							<p class="form-title">Заказать донер</p>
+							<p class="form-text">И получить колу в подарок</p>
+							<form>
+								<input placeholder="Имя" type="text" required>
+								<input placeholder="Номер телефона" type="text" required>
+								<input class="form-button" type="submit" value="Заказать">
+							</form>
+						</div>
+					</div>
+					<div class="stock">
+						<p class="stock-title">Cola 1l <span class="red">В подарок</span></p>
+						<div class="time-over">
+							<div class="time-over_text">До конца акции осталось:</div>
+							<div class="time-over_time">07 : 34 : 30</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<section class="about-us">
+		<div class="container">
+			<div class="row">
+				
+				<h2>О нас</h2>
+				<p>После того, как вы сделали заказ через сайт, мы обрабатываем заказ и отправляем его на кухню. Менеджер связывается с вами по телефону для подтверждения и уточнения деталей и пожеланий по заказу, после чего повара незамедлительно приступают к его приготовлению. Далее заказ передают курьеру, который и доставляет его вам.</p>
+
+				<div class="advantages row">
+					<div class="advantages-item col-md-3 col-sm-3">
+						<img src="img/people.png" alt="специалисты">
+						<p>Персонал состоящий из высококвалифицированных специалистов</p>
+					</div>
+					<div class="advantages-item col-md-3 col-sm-3">
+						<img src="img/dish.png" alt="Широкий ассортимент блюд">
+						<p>Широкий ассортимент блюд</p>
+					</div>
+					<div class="advantages-item col-md-3 col-sm-3">
+						<img src="img/chef.png" alt="Шеф повар">
+						<p>Шеф повар из Турции</p>
+					</div>
+					<div class="advantages-item col-md-3 col-sm-3">
+						<img src="img/microwave.png" alt="Не используем микроволновые печи">
+						<p>Не используем микроволновые печи</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="choise">
+		<div class="container">
+			<div class="row">
+				
+				<div class="choise__title">
+					<img src="img/arrow.png" alt="arrow">
+					<h2>Выбери свой донер</h2>
+					<img src="img/arrow.png" alt="arrow">
+				</div>
+
+				<div class="choise-list row">
+
+					<div class="choise-item">
+						<div class="hover">
+							<p>Заказать</p>
+						</div>
+						<img src="img/chicken_doner.png" alt="">
+						<div class="choise-content">
+							<p class="last-price">850тг</p>
+							<p class="price">600тг</p>
+							<p class="name">Куринный Донер</p>
+							<p class="composition"><span class="red">Состав:</span> Лаваш, мясо курицы, листья салата, помидоры, огурцы, майонез</p>
+							<div class="stars">
+								<ul>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+								</ul>
+								<p>(12)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="choise-item">
+						<div class="hover">
+							<p>Заказать</p>
+						</div>
+						<img src="img/burger_doner.png" alt="">
+						<div class="choise-content">
+							<p class="last-price">950тг</p>
+							<p class="price">700тг</p>
+							<p class="name">Бургер-Донер</p>
+							<p class="composition"><span class="red">Состав:</span> Лаваш, мясо курицы, листья салата, помидоры, огурцы, майонез</p>
+							<div class="stars">
+								<ul>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+								</ul>
+								<p>(28)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="choise-item">
+						<div class="hover">
+							<p>Заказать</p>
+						</div>
+						<img src="img/beff_doner.png" alt="">
+						<div class="choise-content">
+							<p class="last-price">1050тг</p>
+							<p class="price">800тг</p>
+							<p class="name">Говяжий Донер</p>
+							<p class="composition"><span class="red">Состав:</span> Лаваш, мясо курицы, листья салата, помидоры, огурцы, майонез</p>
+							<div class="stars">
+								<ul>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li><a href="#"></a></li>
+								</ul>
+								<p>(8)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dots">
+					<span></span>
+					<span></span>
+					<span class="active"></span>
+					<span></span>
+					<span></span>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<div class="banner chicken">
+		<img src="img/cocacola.png" alt="">
+		<img src="img/sauce.png" alt="">
+		<div class="container">
+			<div class="row">
+				
+				<div class="banner__title">
+					<div class="bg-color">
+						<p>При заказе курицы</p>
+					</div>
+					<span>успей купить</span>
+				</div>
+				
+				<div class="banner__content row">
+					<div class="form-wrapper">
+						<div class="form">
+							<p class="form-title">Заказать курицу</p>
+							<p class="form-text">И получить колу в подарок</p>
+							<form>
+								<input placeholder="Имя" type="text" required>
+								<input placeholder="Номер телефона" type="text" required>
+								<input class="form-button" type="submit" value="Заказать">
+							</form>
+						</div>
+					</div>
+					<div class="stock">
+						<img src="img/special.png" alt="">
+						<p class="stock-title">Соус, cola 1l <span class="red">В подарок</span></p>
+						<div class="time-over">
+							<div class="time-over_text">До конца акции осталось:</div>
+							<div class="time-over_time">07 : 34 : 30</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<section class="choise drink">
+		<div class="container">
+			<div class="row">
+				
+				<div class="choise__title">
+					<img src="img/arrow.png" alt="arrow">
+					<h2>Выбери свой напиток</h2>
+					<img src="img/arrow.png" alt="arrow">
+				</div>
+
+				<div class="choise-list row">
+
+					<div class="choise-item">
+						<div class="hover">
+							<p>Заказать</p>
+						</div>
+						<img src="img/cocacola_drink.png" alt="">
+						<div class="choise-content">
+							<p class="last-price">400тг</p>
+							<p class="price">250тг</p>
+							<p class="name">Cola 0.33l</p>
+							<p class="composition">Безалкогольный газированный напиток. Освежающий, бодрящий.</p>
+							<div class="stars">
+								<ul>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+								</ul>
+								<p>(35)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="choise-item">
+						<div class="hover">
+							<p>Заказать</p>
+						</div>
+						<img src="img/fanta.png" alt="">
+						<div class="choise-content">
+							<p class="last-price">400тг</p>
+							<p class="price">250тг</p>
+							<p class="name">Cola 0.33l</p>
+							<p class="composition">Безалкогольный газированный напиток. Освежающий, бодрящий.</p>
+							<div class="stars">
+								<ul>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+								</ul>
+								<p>(28)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="choise-item">
+						<div class="hover">
+							<p>Заказать</p>
+						</div>
+						<img src="img/sprite.png" alt="">
+						<div class="choise-content">
+							<p class="last-price">400тг</p>
+							<p class="price">250тг</p>
+							<p class="name">Cola 0.33l</p>
+							<p class="composition">Безалкогольный газированный напиток. Освежающий, бодрящий.</p>
+							<div class="stars">
+								<ul>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+									<li class="active"><a href="#"></a></li>
+								</ul>
+								<p>(8)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dots">
+					<span></span>
+					<span></span>
+					<span class="active"></span>
+					<span></span>
+					<span></span>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="combo">
+		<div class="container">
+			<div class="row">
+
+				<div class="combo-title">
+					<h2>Комбо дня</h2>
+				</div>
+				
+				<div class="combo-days">
+					<div class="day">Понедельник</div>
+					<div class="day active">Вторник</div>
+					<div class="day">Среда</div>
+					<div class="day">Четверг</div>
+					<div class="day">Пятница</div>
+				</div>
+
+				<div class="combo-list row">
+					<div class="combo-item col-md-4">
+						<div class="img-wrapper">
+							<img src="img/doner_plate.png" alt="">	
+						</div>		
+						<div class="text-wrapper">
+							<p>Донер-кебаб на тарелке</p>
+							<p>Мясо курицы, листья салата, помидор, огурец на тарелке</p>
+						</div>				
+					</div>
+					<div class="combo-item col-md-4">
+						<div class="img-wrapper">
+							<img src="img/tea.png" alt="">	
+						</div>
+						<div class="text-wrapper">
+							<p>Турецкий чай</p>
+							<p>Крепко заваренный турецкий чай - горячий и ароматный напиток</p>
+						</div>						
+					</div>
+					<div class="combo-item col-md-4">
+						<div class="img-wrapper">
+							<img src="img/baklava.png" alt="">	
+						</div>
+						<div class="text-wrapper">
+							<p>Пахлава</p>
+							<p>Аппетитный десерт из слоёного теста с орехами в сиропе</p>
+						</div>				
+					</div>
+					<div class="combo-order">
+						<div class="stars">
+							<ul>
+								<li class="active"><a href="#"></a></li>
+								<li class="active"><a href="#"></a></li>
+								<li class="active"><a href="#"></a></li>
+								<li class="active"><a href="#"></a></li>
+								<li class="active"><a href="#"></a></li>
+							</ul>
+							<p>(8)</p>
+						</div>
+						<div class="combo-order_text">
+							<p>1 250тг</p>
+							<p>Комбо вторник</p>
+						</div>
+						<div class="combo-order_button">
+							<a href="#">Заказать</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dots">
+					<span></span>
+					<span></span>
+					<span class="active"></span>
+					<span></span>
+					<span></span>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<div class="instagram-widget">
+		<div class="container">
+			<div class="row">
+				<img src="img/instagram_doner.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<section class="reviews">
+		<div class="container">
+			<div class="row">
+
+				<div class="reviews-title">
+					<img src="img/arrow.png" alt="arrow">
+					<h2>Отзывы</h2>
+					<img src="img/arrow.png" alt="arrow">
+				</div>
+				
+				<div class="reviews-wrapper">
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="review">
+								<div class="row">
+									<img src="img/woman_1.png" alt="">
+									<div class="review-content">
+										<div class="row">
+											<p class="review-name">Жазира</p>
+											<p class="review-date">21 июля, 2017</p>
+										</div>
+										<p class="review-text">Быстрая доставка, много мяса в донере, что удивляет. Очень вкусный и свежие продукты. Спасибо!</p>
+										<div class="stars">
+											<ul>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="review">
+								<div class="row">
+									<img src="img/woman_2.png" alt="">
+									<div class="review-content">
+										<div class="row">
+											<p class="review-name">Алия</p>
+											<p class="review-date">23 июля, 2017</p>
+										</div>
+										<p class="review-text">Быстрая доставка, много мяса в донере, что удивляет. Очень вкусный и свежие продукты. Спасибо!</p>
+										<div class="stars">
+											<ul>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="dots">
+					<span></span>
+					<span></span>
+					<span class="active"></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<div class="feedback">
+					<img src="img/pen.png" alt="">
+					<a href="#">Оставить свой отзыв</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="footer-logo">
+						<img src="img/logo.png" alt="">
+						<div class="logo-text">
+							<h1>Champions fastfood</h1>
+							<h2>Сервис доставки еды в Атырау</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="col-right">
+						<a class="write" href="#"><img src="img/mail.png" alt="">Написать нам</a>
+						<p>Сайт создан при поддержке EST Corporation 2017г. <a href="http://estshow.kz/">www.estshow.kz</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img src="img/up.png" alt="" class="up">
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
