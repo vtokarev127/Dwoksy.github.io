@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>TomatoCash</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		
+		<header class="header">
+			<div class="container">
+
+				<!-- begin logo -->
+				<div class="logo">
+					<img src="img/header_logo.png" alt="TomatoCash">
+				</div>
+				<!-- end logo -->
+				
+				<!-- begin navigation -->
+				<div class="navigation">
+					<div class="menu">
+						<span></span>
+					</div>
+					<nav>
+						<a href="/">Главная</a><!--
+						--><a class="active" href="#">Магазины</a><!--
+						--><a href="#">Что такое кэшбэк?</a>
+					</nav>
+					<form action="post">
+						<input type="search" name="search" placeholder="Поиск магазинов"><!--
+						--><button type="submit" value=""><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				<!-- end navigation -->
+				
+				<!-- begin login -->
+				<div class="login">
+					<i class="fa fa-user"></i>
+					<p><a href="#">Войдите</a> или <br><a href="#">зарегистрируйтесь!</a></p>
+				</div>
+				<!-- end login -->
+
+				<div class="mobile-menu">
+					<div class="menu-title">Меню</div>
+					<nav>
+						<a href="/">Главная <i class="fa fa-angle-right"></i></a><!--
+						--><a class="active" href="#">Магазины <i class="fa fa-angle-right"></i></a><!--
+						--><a href="#">Что такое кэшбэк? <i class="fa fa-angle-right"></i></a><!--
+						--><a href="#"><span>Вход</span> Регистрация <i class="fa fa-angle-right"></i></a>
+					</nav>
+					<div class="category">
+						<div class="category-title">Категории:</div>
+						<ul>
+							<li class="all"><input type="checkbox" id="1"><label for="1">Все <i class="fa fa-angle-right"></i></label>
+						</ul>
+						<ul>
+							<li class="active">
+								<input type="checkbox" id="2"><label for="2">Одежда и обувь <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="3"><label for="3">Красота и здоровье <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="4"><label for="4">Электроника <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="5"><label for="5">Все для детей <i class="fa fa-angle-right"></i></label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="6"><label for="6">Все для дома <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="7"><label for="7">Развлечения и досуг <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="8"><label for="8">Доставка еды <i class="fa fa-angle-right"></i></label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="9"><label for="9">Все для дома <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="10"><label for="10">Доставка еды <i class="fa fa-angle-right"></i></label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="11"><label for="11">Услуги <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="12"><label for="12">Иностранные магазины <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="cashback">
+							<p class="">Тип кэшбэка:</p>
+							<input type="checkbox" id="up"><label for="up">Повышенный <i class="fa fa-angle-right"></i></label>
+							<input type="checkbox" id="fix"><label for="fix">Фиксированный <i class="fa fa-angle-right"></i></label>
+							<input type="checkbox" id="percent"><label for="percent">Процент от покупки <i class="fa fa-angle-right"></i></label>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<main class="main-content">
+
+			<div class="magazine">
+				<div class="container">
+					
+					<!-- begin top-line -->
+					<div class="top-line">
+						<p>Категории:</p>
+						<ul>
+							<li class="sort">Сортировка:</li>
+							<li><a href="#">Популярность <i class="fa fa-angle-up"></i></a></li>
+							<li><a href="#">Алфавит <i class="fa fa-angle-up"></i></a></li>
+							<li><a href="#">Новизна <i class="fa fa-angle-up"></i></a></li>
+							<li><a class="active" href="#">Акция <i class="fa fa-angle-up"></i></a></li>
+							<li><a href="#">Лучшее предложение <i class="fa fa-angle-up"></i></a></li>
+						</ul>
+					</div>
+					<!-- end top-line -->
+					<!-- begin left-column -->
+					<div class="left-column">
+						<ul>
+							<li class="all"><input type="checkbox" id="mob-1"><label for="mob-1">Все <i class="fa fa-angle-down"></i></label>
+						</ul>
+						<ul>
+							<li class="active">
+								<input type="checkbox" id="mob-2"><label for="mob-2">Одежда и обувь <i class="fa fa-angle-down"></i></label>
+								<ul>
+									<li><input type="checkbox" id="mob-clothes1"><label for="mob-clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="mob-clothes2"><label for="mob-clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="mob-clothes3"><label for="mob-clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-3"><label for="mob-3">Красота и здоровье <i class="fa fa-angle-down"></i></label>
+								<ul>
+									<li><input type="checkbox" id="mob-clothes1"><label for="mob-clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="mob-clothes2"><label for="mob-clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="mob-clothes3"><label for="mob-clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-4"><label for="mob-4">Электроника <i class="fa fa-angle-down"></i></label>
+								<ul>
+									<li><input type="checkbox" id="mob-clothes1"><label for="mob-clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="mob-clothes2"><label for="mob-clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="mob-clothes3"><label for="mob-clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-5"><label for="mob-5">Все для детей</label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-6"><label for="mob-6">Все для дома <i class="fa fa-angle-down"></i></label>
+								<ul>
+									<li><input type="checkbox" id="mob-clothes1"><label for="mob-clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="mob-clothes2"><label for="mob-clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="mob-clothes3"><label for="mob-clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-7"><label for="mob-7">Развлечения и досуг <i class="fa fa-angle-down"></i></label>
+								<ul>
+									<li><input type="checkbox" id="mob-clothes1"><label for="mob-clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="mob-clothes2"><label for="mob-clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="mob-clothes3"><label for="mob-clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-8"><label for="mob-8">Доставка еды</label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-9"><label for="mob-9">Все для дома <i class="fa fa-angle-down"></i></label>
+								<ul>
+									<li><input type="checkbox" id="mob-clothes1"><label for="mob-clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="mob-clothes2"><label for="mob-clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="mob-clothes3"><label for="mob-clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-10"><label for="mob-10">Доставка еды</label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-11"><label for="mob-11">Услуги <i class="fa fa-angle-down"></i></label>
+								<ul>
+									<li><input type="checkbox" id="mob-clothes1"><label for="mob-clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="mob-clothes2"><label for="mob-clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="mob-clothes3"><label for="mob-clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="mob-12"><label for="mob-12">Иностранные магазины <i class="fa fa-angle-down"></i></label>
+								<ul>
+									<li><input type="checkbox" id="mob-clothes1"><label for="mob-clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="mob-clothes2"><label for="mob-clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="mob-clothes3"><label for="mob-clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<p class="cashback">Тип кэшбэка:</p>
+						<input type="checkbox" id="up"><label for="up">Повышенный</label>
+						<input type="checkbox" id="fix"><label for="fix">Фиксированный</label>
+						<input type="checkbox" id="percent"><label for="percent">Процент от покупки</label>
+					</div>
+					<!-- end left-column -->
+					<!-- begin right-column -->
+					<div class="right-column">
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_lamoda.png" alt="Lamoda">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+						
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="new">Новое</span>
+								</div>
+								<i class="fa fa-heart"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_litres.png" alt="Litres">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="new">Новое</span>
+									<span class="top">Топ</span>
+								</div>
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_aliexpress.png" alt="Aliexpress">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="stock">Акция</span>
+								</div>
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_asos.png" alt="Asos">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_lamoda.png" alt="Lamoda">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+						
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="new">Новое</span>
+								</div>
+								<i class="fa fa-heart"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_litres.png" alt="Litres">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="new">Новое</span>
+									<span class="top">Топ</span>
+								</div>
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_aliexpress.png" alt="Aliexpress">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="stock">Акция</span>
+								</div>
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_asos.png" alt="Asos">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_lamoda.png" alt="Lamoda">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+						
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="new">Новое</span>
+								</div>
+								<i class="fa fa-heart"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_litres.png" alt="Litres">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="new">Новое</span>
+									<span class="top">Топ</span>
+								</div>
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_aliexpress.png" alt="Aliexpress">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="stock">Акция</span>
+								</div>
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_asos.png" alt="Asos">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_lamoda.png" alt="Lamoda">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+						
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="new">Новое</span>
+								</div>
+								<i class="fa fa-heart"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_litres.png" alt="Litres">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="new">Новое</span>
+									<span class="top">Топ</span>
+								</div>
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_aliexpress.png" alt="Aliexpress">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+						<!-- begin shop -->
+						<div class="shop">
+
+							<!-- begin shop-top -->
+							<div class="shop-top">
+								<div class="advantages">
+									<span class="stock">Акция</span>
+								</div>
+								<i class="fa fa-heart-o"></i>
+								<div class="img-wrapper">
+									<img src="img/logo_asos.png" alt="Asos">
+								</div>					
+							</div>
+							<!-- end shop-top -->
+
+							<!-- begin shop-bottom -->
+							<div class="shop-bottom">
+								<div class="shop-bottom_hover">
+									<a href="#">В магазин</a>
+								</div>
+								<p class="cashback">Кэшбэк</p>
+								<p class="percent">4.88%</p>
+								<p class="percent red">6.55%</p>
+								<a href="#">В магазин</a>
+							</div>
+							<!-- end shop-bottom -->
+
+						</div>
+						<!-- end shop -->
+
+					</div>
+					<!-- end right-column -->
+
+				</div>
+			</div>
+
+		</main>
+		<!-- end main-content -->
+
+		<footer class="footer">
+			<div class="container">
+				<!-- begin footer-content -->
+				<div class="footer-content">
+
+					<nav class="footer-nav">
+						<a href="#">Главная</a>
+						<a href="#">Магазины</a>
+						<a href="#">Что такое кэшбэк?</a>
+						<div class="login">
+							<a href="#">Вход <span>|</span></a>
+							<a href="#">Регистрация</a>
+						</div>
+					</nav>
+
+					<div class="footer-logo">
+						<img src="img/footer_logo.png" alt="TomatoCash">
+					</div>
+
+					<div class="footer-text">
+						<h4>Как вернуть деньги?</h4>
+						<ul>
+							<li>Бесплатно <a href="#">регистрируетесь</a></li>
+							<li>Переходите в магазин и совершаете покупку как обычно</li>
+							<li>Кэшбек зачисляется на ваш счет автоматически</li>
+							<li>Выводите его удобным для вас способом</li>
+						</ul>
+					</div>
+
+					<div class="footer-copyright">
+						<p>© 2017. Krakos bros. All rights reserved.</p>
+					</div>
+
+					<div class="footer-links">
+						<a href="#">Карта сайта</a>
+						<a href="#">Условия пользования</a>
+					</div>
+
+				</div>
+				<!-- end footer-content -->
+			</div>
+		</footer>
+
+		<form class="login-form">
+			<div class="login-form_title">Вход</div>
+			<form action="post">
+				<input type="text" name="login" placeholder="Ваш логин...">
+				<input type="password" name="password" placeholder="Ваш пароль...">
+				<input type="submit" value="Войти">
+				<p class="login-form_or">Или</p>
+				<input type="submit" value="Зарегистрируйтесь">
+				<p class="login-form_free">Это бесплатно!</p>
+			</form>
+		</form>
+
+		<div class="up">
+			<i class="fa fa-angle-up"></i>
+		</div>
+
+	</div>
+	
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>
