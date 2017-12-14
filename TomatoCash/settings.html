@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>TomatoCash</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="container">
+
+				<!-- begin logo -->
+				<div class="logo">
+					<img src="img/header_logo.png" alt="TomatoCash">
+				</div>
+				<!-- end logo -->
+				
+				<!-- begin navigation -->
+				<div class="navigation">
+					<div class="menu">
+						<span></span>
+					</div>
+					<nav>
+						<a class="active" href="#">Главная</a><!--
+						--><a href="/shop.html">Магазины</a><!--
+						--><a href="#">Что такое кэшбэк?</a>
+					</nav>
+					<form action="post">
+						<input type="search" name="search" placeholder="Поиск магазинов"><!--
+						--><button type="submit" value=""><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				<!-- end navigation -->
+				
+				<!-- begin login success -->
+				<div class="login success">
+
+					<a class="user-photo" href="#">
+						<img src="img/user_photo.png" alt="Ваше фото">
+					</a>
+					<div class="user-info">
+						<p class="user-name">Ольга Лузина</p>
+						<ul class="user-money"><i class="fa fa-question btn-open-money"></i>
+							<li>1000.00 RUB</li>
+							<li>1000.00 EUR</li>
+							<li>1000.00 USD</li>
+						</ul>
+					</div>
+
+					<div class="user-menu">
+						<a href="#" class="close-menu btn-open-menu"><i class="fa fa-angle-up"></i></a>
+						<ul>
+							<li><a href="#"><i class="fa fa-question"></i>Вопросы</a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i>Заказы</a></li>
+							<li><a href="#"><i class="fa fa-heart"></i>Избранные</a></li>
+							<li><a href="#"><i class="fa fa-money"></i>Вывод денег</a></li>
+							<li><a href="#"><i class="fa fa-headphones"></i>Поддержка</a></li>
+							<li><a href="#"><i class="fa fa-cog"></i>Настройки</a></li>
+						</ul>
+						<a href="#" class="user-exit">Выход</a>
+					</div>
+					
+				</div>
+				<!-- end login success-->
+
+				<!-- begin mobile-login-success -->
+				<div class="mobile-login-success">
+
+					<div class="user-info">
+						<p class="user-info-title">Баланс</p>
+						<ul class="user-money">
+							<li>1000.00 EUR <i class="fa fa-eur"></i></li>
+							<li>1000.00 USD <i class="fa fa-usd"></i></li>
+							<li>1000.00 RUB <i class="fa fa-rub"></i></li>
+						</ul>
+					</div>
+
+					<div class="user-menu">
+						<p class="user-menu-title">Выбор валюты</p>
+						<ul>
+							<li><a href="#"><i class="fa fa-question"></i>Вопросы</a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i>Заказы</a></li>
+							<li><a href="#"><i class="fa fa-heart"></i>Избранные</a></li>
+							<li><a href="#"><i class="fa fa-money"></i>Вывод денег</a></li>
+							<li><a href="#"><i class="fa fa-cog"></i>Настройки</a></li>
+							<li><a href="#"><i class="fa fa-headphones"></i>Поддержка</a></li>
+						</ul>
+						<a href="#" class="user-exit">Выход</a>
+					</div>
+
+				</div>
+				<!-- end mobile-login-success -->
+
+				<div class="mobile-menu">
+					<div class="menu-title">Меню</div>
+					<nav>
+						<a href="/">Главная <i class="fa fa-angle-right"></i></a><!--
+						--><a class="active" href="/shop.html">Магазины <i class="fa fa-angle-right"></i></a><!--
+						--><a href="#">Что такое кэшбэк? <i class="fa fa-angle-right"></i></a><!--
+						--><a href="#"><span>Вход</span> Регистрация <i class="fa fa-angle-right"></i></a>
+					</nav>
+					<div class="category">
+						<div class="category-title">Категории:</div>
+						<ul>
+							<li class="all"><input type="checkbox" id="1"><label for="1">Все <i class="fa fa-angle-right"></i></label>
+						</ul>
+						<ul>
+							<li class="active">
+								<input type="checkbox" id="2"><label for="2">Одежда и обувь <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="3"><label for="3">Красота и здоровье <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="4"><label for="4">Электроника <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="5"><label for="5">Все для детей <i class="fa fa-angle-right"></i></label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="6"><label for="6">Все для дома <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="7"><label for="7">Развлечения и досуг <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="8"><label for="8">Доставка еды <i class="fa fa-angle-right"></i></label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="9"><label for="9">Все для дома <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="10"><label for="10">Доставка еды <i class="fa fa-angle-right"></i></label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="11"><label for="11">Услуги <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="12"><label for="12">Иностранные магазины <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="cashback">
+							<p class="">Тип кэшбэка:</p>
+							<input type="checkbox" id="up"><label for="up">Повышенный <i class="fa fa-angle-right"></i></label>
+							<input type="checkbox" id="fix"><label for="fix">Фиксированный <i class="fa fa-angle-right"></i></label>
+							<input type="checkbox" id="percent"><label for="percent">Процент от покупки <i class="fa fa-angle-right"></i></label>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+		</header>
+		
+		<!-- begin main-content -->
+		<main class="main-content">
+
+			<!-- begin section settings -->
+			<section class="settings">
+				<div class="container">
+					
+					<h2 class="settings-title">Настройки аккаунта</h2>
+
+					<!-- begin settings-warning -->
+					<div class="settings-warning">
+						<a class="close" href="#"><i class="fa fa-times"></i></a>
+						<p class="title">Предупреждение!</p>
+						<div class="text"><span class="bold">Ваш E-mail не подтвержден. </span>Без подтверждения аккаунта мы не сможете вывести ваши деньги. На ваш E-mail было отправлено сообщение для активации аккаунта. Если вы не получили письмо, нажмите <a href="#">сюда</a> и мы заново отправим сообщение</div>
+					</div>
+					<!-- end settings-warning -->
+
+					<!-- begin settings-alert -->
+					<div class="settings-alert">
+						<a class="close" href="#"><i class="fa fa-times"></i></a>
+						<p class="text">В течение полугода после регистрации (до 2018.05.7) вам доступен <span class="bold">повышенный кэшбек</span> (до 40%). Если в течение этого времени общая сумма кэшбека превысит 3000 RUB, то повышенный кэшбек <span class="bold">сохранится</span> и после этого времени!</p>
+					</div>
+					<!-- end settings-alert -->
+
+					<!-- begin settings-form -->
+					<div class="settings-form">
+						<form action="post">
+							<label for="name">Имя</label>
+							<input type="text" placeholder="Ольга Лузина">
+						</form>
+						<div class="date">
+							<label for="">Дата рождения</label>
+							<label class="select day" for="">
+								<select name="day" id="day">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</label>
+							<label class="select month" for="">
+								<select name="month" id="month">
+									<option value="Декабрь">Декабрь</option>
+									<option value="Февраль">Февраль</option>
+									<option value="Март">Март</option>
+									<option value="Апрель">Апрель</option>
+								</select>
+							</label>
+							<label class="select year" for="">
+								<select name="year" id="year">
+									<option value="1995">1995</option>
+									<option value="1995">1995</option>
+									<option value="1995">1995</option>
+									<option value="1995">1995</option>
+								</select>
+							</label>
+						</div>
+						<label for="">Аватар</label>
+						<label class="settings-avatar">
+							<span class="button">Выберите файл</span>
+							<mark>Файл не выбран</mark>
+							<input type="file">
+						</label>
+						<label for="">Страна</label>
+						<label class="select country" for="">
+							<select name="country" id="country">
+								<option value="Беларусь">Беларусь</option>
+								<option value="Беларусь">Беларусь</option>
+								<option value="Беларусь">Беларусь</option>
+								<option value="Беларусь">Беларусь</option>
+							</select>
+						</label>
+						<button class="save">Сохранить</button>
+						
+						<!-- begin social -->
+						<div class="social">
+							<label for="">Привязка аккаунта к социальной сети</label>
+							<a href="#"><img src="img/vk.png" alt=""></a>
+							<a href="#"><img src="img/google.png" alt=""></a>
+							<a href="#"><img src="img/odnoklassniki.png" alt=""></a>
+							<a href="#"><img src="img/facebook.png" alt=""></a>
+						</div>
+						<!-- end social -->
+						
+						<!-- begin checkboxs -->
+						<div class="checkboxs">
+
+							<label class="title" for="">Настройки уведомлений по E - mail</label>
+
+							<ul>
+								<li>
+									<input type="checkbox" id="payment">
+									<label class="checkbox" for="payment">Уведомлять о платежах</label>
+								</li>
+								<li>
+									<input type="checkbox" id="news">
+									<label class="checkbox" for="news">Уведомлять о новостях</label>
+								</li>
+								<li>
+									<input type="checkbox" id="favorite">
+									<label class="checkbox" for="favorite">Уведомлять об акциях любимых магазинов</label>
+								</li>
+								<li>
+									<input type="checkbox" id="cashback">
+									<label class="checkbox" for="cashback">Уведомлять о статусе кэшбэка</label>
+								</li>
+								<li>
+									<input type="checkbox" id="alert">
+									<label class="checkbox" for="alert">Системные уведомления</label>
+								</li>
+							</ul>
+																					
+						</div>
+						<!-- end checkboxs -->
+						<button class="refresh">Обновить</button>
+						
+					</div>
+					<!-- end settings-form -->
+
+				</div>
+			</section>
+			<!-- end section settings -->
+
+		</main>
+		<!-- end main-content -->
+
+		<footer class="footer">
+			<div class="container">
+				<!-- begin footer-content -->
+				<div class="footer-content">
+
+					<nav class="footer-nav">
+						<a href="#">Главная</a>
+						<a href="/shop.html">Магазины</a>
+						<a href="#">Что такое кэшбэк?</a>
+						<div class="login">
+							<a href="#">Вход <span>|</span></a>
+							<a href="#">Регистрация</a>
+						</div>
+					</nav>
+
+					<div class="footer-logo">
+						<img src="img/footer_logo.png" alt="TomatoCash">
+					</div>
+
+					<div class="footer-text">
+						<h4>Как вернуть деньги?</h4>
+						<ul>
+							<li>Бесплатно <a href="#">регистрируетесь</a></li>
+							<li>Переходите в магазин и совершаете покупку как обычно</li>
+							<li>Кэшбек зачисляется на ваш счет автоматически</li>
+							<li>Выводите его удобным для вас способом</li>
+						</ul>
+					</div>
+
+					<div class="footer-copyright">
+						<p>© 2017. Krakos bros. All rights reserved.</p>
+					</div>
+
+					<div class="footer-links">
+						<a href="#">Карта сайта</a>
+						<a href="#">Условия пользования</a>
+					</div>
+
+				</div>
+				<!-- end footer-content -->
+			</div>
+		</footer>
+
+		<div class="up">
+			<i class="fa fa-angle-up"></i>
+		</div>
+		
+	</div>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>

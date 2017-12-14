@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>TomatoCash</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="container">
+
+				<!-- begin logo -->
+				<div class="logo">
+					<img src="img/header_logo.png" alt="TomatoCash">
+				</div>
+				<!-- end logo -->
+				
+				<!-- begin navigation -->
+				<div class="navigation">
+					<div class="menu">
+						<span></span>
+					</div>
+					<nav>
+						<a class="active" href="#">Главная</a><!--
+						--><a href="/shop.html">Магазины</a><!--
+						--><a href="#">Что такое кэшбэк?</a>
+					</nav>
+					<form action="post">
+						<input type="search" name="search" placeholder="Поиск магазинов"><!--
+						--><button type="submit" value=""><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				<!-- end navigation -->
+				
+				<!-- begin login success -->
+				<div class="login success">
+
+					<a class="user-photo" href="#">
+						<img src="img/user_photo.png" alt="Ваше фото">
+					</a>
+					<div class="user-info">
+						<p class="user-name">Ольга Лузина</p>
+						<ul class="user-money"><i class="fa fa-question btn-open-money"></i>
+							<li>1000.00 RUB</li>
+							<li>1000.00 EUR</li>
+							<li>1000.00 USD</li>
+						</ul>
+					</div>
+
+					<div class="user-menu">
+						<a href="#" class="close-menu btn-open-menu"><i class="fa fa-angle-up"></i></a>
+						<ul>
+							<li><a href="#"><i class="fa fa-question"></i>Вопросы</a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i>Заказы</a></li>
+							<li><a href="#"><i class="fa fa-heart"></i>Избранные</a></li>
+							<li><a href="#"><i class="fa fa-money"></i>Вывод денег</a></li>
+							<li><a href="#"><i class="fa fa-headphones"></i>Поддержка</a></li>
+							<li><a href="#"><i class="fa fa-cog"></i>Настройки</a></li>
+						</ul>
+						<a href="#" class="user-exit">Выход</a>
+					</div>
+					
+				</div>
+				<!-- end login success-->
+
+				<!-- begin mobile-login-success -->
+				<div class="mobile-login-success">
+
+					<div class="user-info">
+						<p class="user-info-title">Баланс</p>
+						<ul class="user-money">
+							<li>1000.00 EUR <i class="fa fa-eur"></i></li>
+							<li>1000.00 USD <i class="fa fa-usd"></i></li>
+							<li>1000.00 RUB <i class="fa fa-rub"></i></li>
+						</ul>
+					</div>
+
+					<div class="user-menu">
+						<p class="user-menu-title">Выбор валюты</p>
+						<ul>
+							<li><a href="#"><i class="fa fa-question"></i>Вопросы</a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i>Заказы</a></li>
+							<li><a href="#"><i class="fa fa-heart"></i>Избранные</a></li>
+							<li><a href="#"><i class="fa fa-money"></i>Вывод денег</a></li>
+							<li><a href="#"><i class="fa fa-cog"></i>Настройки</a></li>
+							<li><a href="#"><i class="fa fa-headphones"></i>Поддержка</a></li>
+						</ul>
+						<a href="#" class="user-exit">Выход</a>
+					</div>
+
+				</div>
+				<!-- end mobile-login-success -->
+
+				<div class="mobile-menu">
+					<div class="menu-title">Меню</div>
+					<nav>
+						<a href="/">Главная <i class="fa fa-angle-right"></i></a><!--
+						--><a class="active" href="/shop.html">Магазины <i class="fa fa-angle-right"></i></a><!--
+						--><a href="#">Что такое кэшбэк? <i class="fa fa-angle-right"></i></a><!--
+						--><a href="#"><span>Вход</span> Регистрация <i class="fa fa-angle-right"></i></a>
+					</nav>
+					<div class="category">
+						<div class="category-title">Категории:</div>
+						<ul>
+							<li class="all"><input type="checkbox" id="1"><label for="1">Все <i class="fa fa-angle-right"></i></label>
+						</ul>
+						<ul>
+							<li class="active">
+								<input type="checkbox" id="2"><label for="2">Одежда и обувь <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="3"><label for="3">Красота и здоровье <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="4"><label for="4">Электроника <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="5"><label for="5">Все для детей <i class="fa fa-angle-right"></i></label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="6"><label for="6">Все для дома <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="7"><label for="7">Развлечения и досуг <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="8"><label for="8">Доставка еды <i class="fa fa-angle-right"></i></label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="9"><label for="9">Все для дома <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="10"><label for="10">Доставка еды <i class="fa fa-angle-right"></i></label>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="11"><label for="11">Услуги <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox" id="12"><label for="12">Иностранные магазины <i class="fa fa-angle-right"></i></label>
+								<ul>
+									<li><input type="checkbox" id="clothes1"><label for="clothes1">Одежда</label></li>
+									<li><input type="checkbox" id="clothes2"><label for="clothes2">Обувь</label></li>
+									<li><input type="checkbox" id="clothes3"><label for="clothes3">Аксессуары</label></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="cashback">
+							<p class="">Тип кэшбэка:</p>
+							<input type="checkbox" id="up"><label for="up">Повышенный <i class="fa fa-angle-right"></i></label>
+							<input type="checkbox" id="fix"><label for="fix">Фиксированный <i class="fa fa-angle-right"></i></label>
+							<input type="checkbox" id="percent"><label for="percent">Процент от покупки <i class="fa fa-angle-right"></i></label>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+		</header>
+		
+		<!-- begin main-content -->
+		<main class="main-content">
+
+			<!-- begin section shop-item -->
+			<section class="shop-item">
+				<div class="container">
+					
+					<!-- begin shop-item-top-line -->
+					<div class="shop-item-top-line">
+						<div class="img-wrapper">
+							<i class="fa fa-heart"></i>
+							<img src="img/logo_aliexpress_big.png" alt="">
+						</div>
+						<div class="shop-item-cashback">
+							<p>Кэшбэк <span class="old">4%</span> <span class="new">до 6%</span></p>
+							<div class="shop-item-loyal">Кэшбэк увеличен на 40% по программе лояльности для новых пользователей <i class="fa fa-question"></i></div>
+						</div>
+					</div>
+					<!-- end shop-item-top-line -->
+
+					<p class="shop-item-text">AliExpress - это более 20 000 производителей прямо на одной торговой площадке, цены значительно дешевле за счет покупки товаров напрямую, без посредников.</p>
+
+					<div class="shop-item-button-wrapper">
+						<a href="#" class="shop-item-to-shop">Перейти в магазин</a>
+					</div>
+
+					<!-- begin shop-item-waiting-time -->
+					<div class="shop-item-waiting-time">
+						<p>Максимальное время ожидания кэшбэка - <span class="orange">60 дней</span></p>
+						<p>Среднее время ожидания кэшбэка - <span class="orange">30 дней</span></p>
+					</div>
+					<!-- end shop-item-waiting-time -->
+
+					<!-- begin shop-item-cashback-size -->
+					<div class="shop-item-cashback-size">
+						<p class="title">Размеры кэшбэка:</p>
+						<div class="img-wrapper">
+							<img src="img/money_bag.png" alt="">
+						</div>
+						<ul class="shop-item-list-sizes">
+							<li><span class="size">2.31%</span>Телефоны и коммуникация<i class="fa fa-question"></i></li>
+							<li><span class="size">4.62%</span>Остальное<i class="fa fa-question"></i></li>
+							<li><span class="size">1.08%</span><span class="desktop">Оплаченный</span> заказ из раздела Молния<i class="fa fa-question active"></i></li>
+						</ul>
+						<div class="shop-item-question-content">
+							<span class="icon">?</span>
+							Размер кэшбека действителен для всех стран. Кешбек может быть значительно выше при покупке некоторых товаров (самый высокий кешбек для товаров из раздела Телефоны, Планшеты и Бытовая техника)
+						</div>
+						<div class="shop-item-question-content">
+							<span class="icon">?</span>
+							Размер кэшбека действителен для всех стран. Кешбек может быть значительно выше при покупке некоторых товаров (самый высокий кешбек для товаров из раздела Телефоны, Планшеты и Бытовая техника)
+						</div>
+						<div class="shop-item-question-content active">
+							<span class="icon">?</span>
+							Размер кэшбека действителен для всех стран. Кешбек может быть значительно выше при покупке некоторых товаров (самый высокий кешбек для товаров из раздела Телефоны, Планшеты и Бытовая техника)
+						</div>
+					</div>
+					<!-- end shop-item-cashback-size -->
+
+					<!-- begin shop-item-important -->
+					<div class="shop-item-important">
+						<p><span>Важно!</span> Кэшбэк НЕ начисляется за: - подарочные сертификаты; - пополнение мобильного счета в приложении Алиэкспресс; - а также, если перед оформлением заказа вы не авторизировались (не вошли в свой аккаунт на Aliexpress).</p>
+						<p>При заказе на AliExpress номера заказов в личном кабинете Tomatocash и в магазине могут не соответствовать. В частности, когда заказ имеет несколько позиций. Это связано с тем, что каждой позиции товара магазин присваивает отдельный номер, который передает на сервис Tomatocash, как номер заказа.</p>
+						<p>Также при начислении средств возможны незначительные колебания стоимости заказов и соответственно сумм кэшбэка. Это связано с перерасчетом и конвертацией валют, в которых магазин Алиэкспресс ведет денежные операции. Кэшбэк начисляется от суммы в долларах в пересчете на рубли по текущему курсу ЦБ РФ.</p>
+						<p>Для получения кэшбэка необходимо совершать переход с Tomatocash на AliExpress перед каждой покупкой.</p>
+						<p>Совет: чтобы Ваш кэшбэк в Алиэкспресс быстрее подтвердился, не забудьте подтвердить получение заказа на AliExpress. Это может существенно сократить время ожидания кэшбэка.</p>
+					</div>
+					<!-- end shop-item-important -->
+
+				</div>
+			</section>
+			<!-- end section shop-item -->
+
+		</main>
+		<!-- end main-content -->
+
+		<footer class="footer">
+			<div class="container">
+				<!-- begin footer-content -->
+				<div class="footer-content">
+
+					<nav class="footer-nav">
+						<a href="#">Главная</a>
+						<a href="/shop.html">Магазины</a>
+						<a href="#">Что такое кэшбэк?</a>
+						<div class="login">
+							<a href="#">Вход <span>|</span></a>
+							<a href="#">Регистрация</a>
+						</div>
+					</nav>
+
+					<div class="footer-logo">
+						<img src="img/footer_logo.png" alt="TomatoCash">
+					</div>
+
+					<div class="footer-text">
+						<h4>Как вернуть деньги?</h4>
+						<ul>
+							<li>Бесплатно <a href="#">регистрируетесь</a></li>
+							<li>Переходите в магазин и совершаете покупку как обычно</li>
+							<li>Кэшбек зачисляется на ваш счет автоматически</li>
+							<li>Выводите его удобным для вас способом</li>
+						</ul>
+					</div>
+
+					<div class="footer-copyright">
+						<p>© 2017. Krakos bros. All rights reserved.</p>
+					</div>
+
+					<div class="footer-links">
+						<a href="#">Карта сайта</a>
+						<a href="#">Условия пользования</a>
+					</div>
+
+				</div>
+				<!-- end footer-content -->
+			</div>
+		</footer>
+
+		<div class="up">
+			<i class="fa fa-angle-up"></i>
+		</div>
+		
+	</div>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>
