@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title></title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=480, initial-scale=1, maximum-scale=0.75, user-scalable=no">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body class="internal">
+
+	<header class="header">
+
+		<div class="header-top-line">
+			<div class="container">
+
+				<!-- begin header-logo -->
+				<div class="header-logo">
+					<a href="#" class="logo-link">insta<span>ways</span><i class="icon icon-logo-line"></i></a>
+				</div>
+				<!-- end header-logo -->
+				<a href="#subs" class="header-link hide-lg popup">Подписаться</a>
+				
+			</div>
+		</div>
+				
+		<!-- begin internal-header-hero -->
+		<div class="internal-header-hero">
+			<div class="container">
+				
+				<div class="title-wrapper">
+					<div class="internal-title">Новогодний конкурс<br>от Фитолис</div>
+					<a href="#subs" class="title-link hide-mobile popup">Подписаться</a>
+				</div>
+
+				<div class="user">
+					<img class="hide-mobile" src="img/hero-line.svg" alt="">
+					<img class="instagram" src="img/instagram.svg" alt="Instagramm">
+					<a href="#" class="user-link">lenaelena24ok</a>
+				</div>
+				<div class="hero-instagram">
+					<div class="timer-text">
+						<p>Завершится<span>через</span></p>
+					</div>
+					<div class="timer-text done">
+						<p>Завершен</p>
+					</div>
+					<div class="animate-circle first"></div>
+					<div class="animate-circle second"></div>
+				</div>
+
+				<div class="user-info">
+					<div class="wrapper-button">
+						<div class="bg"></div>
+						<a href="#description" class="user-desc user-button popup">Описание конкурса</a>
+					</div>
+					<div class="wrapper-button">
+						<div class="bg"></div>
+						<a href="#number" class="user-num user-button popup">Узнать свой номер участника</a>
+					</div>
+					<div class="wrapper-button">
+						<div class="bg hide-lg"></div>
+						<i class="icon icon-click hide-mobile"></i><a href="#conditions" class="user-info-link popup">Проверить выполнение условий</a>
+					</div>
+					<div class="wrapper-button">
+						<div class="bg hide-lg"></div>
+						<i class="icon icon-sponsor hide-mobile"></i><a href="#sponsors" class="user-info-link popup">Спонсоры</a>
+					</div>
+				</div>
+
+				<div class="timer" data-timer="10" style="width: 300px;"></div>
+
+				<div class="wrapper-button">
+					<a href="#winers" class="user-win popup"><i class="icon icon-winers"></i>Победители</a>
+				</div>
+
+			</div>
+		</div>
+		<!-- end internal-header-hero -->
+
+	</header>
+
+	<div class="white-popup-block mfp-hide number" id="number">
+		<div class="icon number-icon"></div>
+		<div class="popup-title">Узнать номер участника</div>
+		<form action="" method="post">
+			<input type="text" class="popup-input" placeholder="Введите логин" required>
+			<div class="button-wrapper">
+				<div class="bg"></div>
+				<button id="number-check" class="popup-button">Узнать</button>
+			</div>
+		</form>
+		<div class="popup-number-bottom done active">
+			<div class="you-num-text">Ваш номер</div>
+			<div class="you-num">571</div>
+			<div class="you-num-refresh">Список обновляется каждый час</div>
+		</div>
+		<div class="popup-number-bottom false">
+			<div class="you-num-sorry">К сожалению<br>вы не найдены в списке</div>
+			<div class="you-num-refresh">Проверьте позже,<br>список обновляется каждый час</div>
+		</div>
+	</div>
+
+	<div class="white-popup-block mfp-hide number" id="number-false">
+		<div class="icon number-icon"></div>
+		<div class="popup-title">Узнать номер участника</div>
+		<form action="" method="post">
+			<input type="text" class="popup-input" placeholder="Введите логин" required>
+			<div class="button-wrapper">
+				<div class="bg"></div>
+				<button class="popup-button">Узнать</button>
+			</div>
+		</form>
+		
+	</div>
+
+	<div class="white-popup-block mfp-hide number description" id="description">
+		<div class="icon description-icon"></div>
+		<div class="popup-title">Описание</div>
+		<div class="popup-content">
+			<p><b>Мы хотим засыпать вас подарками!</b></p>
+			<p>Разыгрываем 90 подарков, номинал каждого не менее 1 000р! Призовой фонд составляет БОЛЕЕ 90 000 рублей!!! Для того, чтобы выиграть, нужно подписаться под всех организаторов, которые участвуют в акции и разместить любой хваст на закупку любого организатора #club24ok с хэштегом #окейнаяхвастомания</p>
+			<p>Подпишите название закупки и ник организатора под постом!</p>
+			<p>Условия выполнения конкурса будут проверяться автоматически, нашим сервисом.</p>
+		</div>
+		<div class="icon rools-icon"></div>
+		<div class="popup-title">Правила</div>
+		<div class="popup-content">
+			<p>Поскольку, в один пост можно вместить лишь 10 организаторов, мы сделаем много постов, подписывайтесь на всех, чтобы было больше шансов выиграть!</p>
+			<p>Победителей начнем выбирать 23 января, каждый день в прямом эфире будем разыгрывать по 9 призов!</p>
+		</div>
+	</div>
+
+	<div class="white-popup-block mfp-hide" id="winers">
+		<div class="icon winers-icon"></div>
+		<div class="popup-title">Победители</div>
+		<div class="winer">
+			<div class="winer-img">
+				<div class="winer-num">1</div>
+				<img src="img/client-1.jpg" alt="">
+			</div>
+			<div class="winer-name">Агибалова Ирина</div>
+			<a href="#" class="winer-link">agibalova_irina</a>
+		</div>
+		<div class="winer">
+			<div class="winer-img">
+				<div class="winer-num">2</div>
+				<img src="img/client-1.jpg" alt="">
+			</div>
+			<div class="winer-name">Агибалова Ирина</div>
+			<a href="#" class="winer-link">agibalova_irina</a>
+		</div>
+		<div class="winer">
+			<div class="winer-img">
+				<div class="winer-num">3</div>
+				<img src="img/client-1.jpg" alt="">
+			</div>
+			<div class="winer-name">Агибалова Ирина</div>
+			<a href="#" class="winer-link">agibalova_irina</a>
+		</div>
+		<div class="show-more-button-wrapper">
+			<div class="bg"></div>
+			<a id="showMoreWin" href="#" class="show-more">Показать еще<i class="icon icon-arrows"></i></a>
+		</div>
+		
+	</div>
+
+	<div class="white-popup-block mfp-hide sponsors" id="sponsors">
+		<div class="icon sponsors-icon"></div>
+		<div class="popup-title">Спонсоры</div>
+		<div class="popup-content">
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+			<div class="sponsor">
+				<div class="sponsor-img">
+					<img src="img/client-1.jpg" alt="">
+				</div>
+				<div class="text-wrapper">
+					<div class="sponsor-name">Агибалова Ирина</div>
+					<a href="#" class="link">agibalova_irina</a>
+				</div>
+			</div>
+		</div>
+		<div class="show-more-button-wrapper">
+			<div class="bg"></div>
+			<a id="showMoreSponsor" href="#" class="show-more">Показать еще<i class="icon icon-arrows"></i></a>
+		</div>
+	</div>
+
+	<div class="white-popup-block mfp-hide conditions" id="conditions">
+		<div class="icon conditions-icon"></div>
+		<div class="popup-title">Проверить выполнение</div>
+		<form action="" method="post">
+			<input type="text" class="popup-input" placeholder="Введите логин" required>
+			<div class="button-wrapper">
+				<div class="bg"></div>
+				<button id="conditions-check" class="popup-button">Проверить</button>
+			</div>
+		</form>
+		<div class="popup-number-bottom done active">
+			<div class="conditions-img"></div>	
+			<div class="conditions-done">Все условия выполнены!</div>
+			<div class="conditions-text">Вы подписались на всех спонсоров.</div>
+		</div>
+		<div class="popup-number-bottom false">
+			<div class="conditions-img false"></div>	
+			<div class="conditions-false">Условия не выполнены!</div>
+			<div class="conditions-text">Вы не подписаны на спонсоров:</div>
+			<a href="#" class="conditions-link">elenakrygina</a><br>
+			<a href="#" class="conditions-link">lundenilona</a>
+		</div>
+	</div>
+
+	<div class="white-popup-block mfp-hide conditions" id="conditions-false">
+		<a class="change popup" href="#conditions">Успех</a>
+		<div class="icon conditions-icon"></div>
+		<div class="popup-title">Проверить выполнение</div>
+		<form action="" method="post">
+			<input type="text" class="popup-input" placeholder="Введите логин" required>
+			<div class="button-wrapper">
+				<div class="bg"></div>
+				<button class="popup-button">Проверить</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="white-popup-block mfp-hide subs" id="subs">
+		<div class="icon subs-icon"></div>
+		<div class="popup-title">Автоподписка</div>
+		<div class="subs-done">
+			<div class="subs-img"></div>
+			<div class="subs-title">Спасибо, подписка началась!</div>
+			<div class="subs-text">Нажмите на кнопку автоподписки еще раз</div>
+		</div>
+		<form action="" method="post">
+			<input type="text" class="popup-input" placeholder="Введите логин" required>
+			<input type="password" class="popup-input" placeholder="Введите пароль" required>
+			<div class="button-wrapper">
+				<div class="bg"></div>
+				<button id="sub-done" class="popup-button">Подписаться автоматически</button>
+			</div>
+		</form>
+		<a href="#instruction" class="instruction-link popup">Инструкция</a>
+		<div class="wrapper-button">
+			<a href="#" class="button">Подписаться вручную</a>
+		</div>
+	</div>
+
+	<div class="white-popup-block mfp-hide subs" id="subs-done">
+		<div class="icon subs-icon"></div>
+		<div class="popup-title">Автоподписка</div>
+		<div class="subs-done">
+			<div class="subs-img"></div>
+			<div class="subs-title">Спасибо, подписка началась!</div>
+			<div class="subs-text">Нажмите на кнопку автоподписки еще раз</div>
+		</div>
+		<form action="" method="post">
+			<input type="text" class="popup-input" placeholder="Введите логин" required>
+			<input type="password" class="popup-input" placeholder="Введите пароль" required>
+			<div class="button-wrapper">
+				<div class="bg"></div>
+				<button class="popup-button">Подписаться автоматически</button>
+			</div>
+		</form>
+		<a href="#instruction" class="instruction-link popup">Инструкция</a>
+		<div class="wrapper-button">
+			<a href="#" class="button">Подписаться вручную</a>
+		</div>
+	</div>
+
+	<div class="white-popup-block mfp-hide instruction" id="instruction">
+		<div class="icon instruction-icon"></div>
+		<div class="popup-title">Инструкция</div>
+		<div class="popup-content">
+			<p><span class="num">1.</span><b>Мы хотим засыпать вас подарками!</b></p>
+			<p>Разыгрываем 90 подарков, номинал каждого не менее 1 000р! Призовой фонд составляет БОЛЕЕ 90 000 рублей!!! Для того, чтобы выиграть, нужно подписаться под всех организаторов, которые участвуют в акции и разместить любой хваст на закупку любого организатора #club24ok с хэштегом #окейнаяхвастомания</p>
+		</div>
+		<div class="popup-content">
+			<p><span class="num">2.</span><b>Подпишите название закупки и ник организатора под постом!</b></p>
+			<p>Условия выполнения конкурса будут проверяться автоматически, нашим сервисом.</p>
+		</div>
+	</div>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>
