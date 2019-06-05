@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title></title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-12 d-flex">
+						<nav class="navbar navbar-inverse bg-inverse navbar-expand-xl">
+							<div class="header-logo"><a href="/"><span>Ad</span>Bobr</a> <a href="#"><i class="fa fa-home"></i></a></div>
+							<button class="navbar-toggler navbar-toggler-righ collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+								<span> </span>
+								<span> </span>
+								<span> </span>
+							</button>
+							<div class="header-nav d-xl-flex collapse navbar-collapse" id="navbarNavAltMarkup">
+								<ul>
+									<li class="is-active"><a href="#">СТАТИСТИКА</a></li>
+									<li class="dropdown"><a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ОФФЕРЫ</a>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+											<li><a class="dropdown-item" href="#">Все офферы</a></li>
+											<li><a class="dropdown-item" href="#">Мои офферы</a></li>
+											<li><a class="dropdown-item" href="#">Избранные офферы</a></li>
+										</ul>
+									</li>
+									<li><a href="#">МОИ ПЛОЩАДКИ</a></li>
+									<li><a href="#">ФИНАНСЫ</a></li>
+									<li><a href="#">ТИКЕТЫ <span>+3</span></a></li>
+									<li><a href="#">НОВОСТИ</a></li>
+									<li><a href="#">РЕФЕРАЛЫ</a></li>
+									<li><a href="#">НАСТРОЙКИ</a></li>
+								</ul>
+								<div class="header-rocket"><a href="#"><i class="fa fa-rocket"></i> Топ</a></div>
+								<div class="header-user">
+									<div class="header-notification"><a href="#"><i class="fa fa-bell"></i><span>13</span></a></div>
+									<div class="header-user-photo"><a href="#"><img src="img/user.png" alt=""></a></div>
+									<div class="header-user-info">
+										<p>ID: 234</p>
+										<p>Level: 81</p>
+									</div>
+									<div class="header-user-logout"><a href="#"><i class="fa fa-sign-out"></i></a></div>
+								</div>
+							</div>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="header-playground">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-12 d-flex">
+						<div class="header-my-playground"><a href="#"><i class="fa fa-list-ul"></i>Мои площадки</a></div>
+						<div class="header-add-playground"><a href="#"><i class="fa fa-plus"></i>Добавить площадку</a></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12">
+					<ul>
+						<li><a href="#">Кабинет</a></li>
+						<li><a href="#">Мои площадки</a></li>
+						<li>Добавляем площадку</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+
+		<!-- begin section add-playground -->
+		<section class="add-playground">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-xl-3">
+						<div class="shadow-wrapper">
+							<h2 class="col-title">Добавим площадку?</h2>
+							<div class="col-img"><img src="img/bober.svg" alt=""></div>
+							<p class="col-text">Лучшие <a href="#">офферы</a> буду доступны сразу после добавления площадки.</p>
+						</div>
+					</div>
+					<div class="col-xl-9">
+						<h2 class="right-title"><span>МОИ ПЛОЩАДКИ</span> / Добавляем площадку</h2>
+						<form class="col-form">
+							<div class="container">
+								<div class="row">
+
+									<div class="col-lg-6">
+										<div class="col-input">
+											<label for="name">Название</label>
+											<input type="text" name="name" id="name" placeholder="Это placeholder">
+										</div>
+										<div class="col-input">
+											<label for="site">URL площадки</label>
+											<input type="text" name="site" id="site" placeholder="https://">
+										</div>
+										<div class="col-input">
+											<label for="type">Тип площадки</label>
+											<div class="select-wrap">
+												<select name="type" id="type">
+													<option value="1">Веб-сайт</option>
+													<option value="1">Веб-сайт</option>
+													<option value="1">Веб-сайт</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-input">
+											<label for="cash">Тематика</label>
+											<div class="select-wrap">
+												<select name="cash" id="cash">
+													<option value="1">Кэшбэк</option>
+													<option value="1">Кэшбэк</option>
+													<option value="1">Кэшбэк</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-input">
+											<label for="text">Как планируете рекламировать партнерские программы?</label>
+											<textarea name="text" id="text"></textarea>
+										</div>
+										<button class="btn d-none d-lg-block">Добавить</button>
+									</div>
+									<div class="col-lg-6">
+										<p class="right-text">Трафик</p>
+										<div class="col-checkbox">
+											<input type="checkbox" name="checkbox-1" id="checkbox-1" checked>
+											<label for="checkbox-1">
+												<b>SEO сайты</b>
+												<span>Продвижение сайта с использованием ключевых слов в выдаче поисковых систем (Яндекс, Google и т.д.).</span>
+											</label>
+										</div>
+										<div class="col-checkbox">
+											<input type="checkbox" name="checkbox-2" id="checkbox-2">
+											<label for="checkbox-2">
+												<b>Pop Up</b>
+												<span>Вид интернет-рекламы, который заключается в появлении при загрузке сайта окна с рекламным изображением, при нажатии на которое пользователь переходит на страницу рекламодателя.</span>
+											</label>
+										</div>
+										<div class="col-checkbox">
+											<input type="checkbox" name="checkbox-3" id="checkbox-3">
+											<label for="checkbox-3">
+												<b>Соцсети</b>
+												<span>Использование тематических публичных страниц, групп и сообществ социальных сетей для продвижения товаров и услуг рекламодателя.</span>
+											</label>
+										</div>
+										<div class="col-checkbox">
+											<input type="checkbox" name="checkbox-4" id="checkbox-4">
+											<label for="checkbox-4">
+												<b>Clickunder</b>
+												<span>Формат рекламы, который представляет из себя сплошной баннер «подложенный» под веб-страницу, при клике на которую происходит переход на сайт рекламодателя.</span>
+											</label>
+										</div>
+										<button class="btn d-md-block d-lg-none">Добавить</button>
+									</div>
+
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- end section add-playground -->
+
+		<!-- begin section my-playground -->
+		<section class="my-playground">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-xl-3">
+						<div class="shadow-wrapper">
+							<h2 class="col-title">Ваши площадки</h2>
+							<div class="col-img"><img src="img/bober.svg" alt=""></div>
+							<p class="col-text">Для добавления новой площадки нажмите на кнопку ниже</p>
+							<a href="#" class="btn">Добавить площадку</a>
+						</div>
+					</div>
+					<div class="col-xl-9">
+						<h2 class="right-title"><span>МОИ ПЛОЩАДКИ</span> / Все площадки</h2>
+						<div class="col-table">
+							<a href="#" class="btn-hollow"><i class="fa fa-plus"></i> ДОБАВИТЬ</a>
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<td>№</td>
+											<td>Площадка</td>
+											<td>Тип</td>
+											<td>Postback</td>
+											<td>Комментарий модератора</td>
+											<td>Статус</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1.</td>
+											<td>Радио онлайн <a href="http://play.google.com/store/apps/details?id=online.media.radio_free">http://play.google.com/store/apps/details?id=online.media.radio_free</a> <span>3 августа 2018</span></td>
+											<td>Web-сайт / Мобильное Приложение</td>
+											<td><a href="#"><i class="fa fa-wrench"></i></a></td>
+											<td>Одобряю</td>
+											<td><div class="complite"><i class="fa fa-check"></i></div></td>
+										</tr>
+										<tr>
+											<td>2.</td>
+											<td>Пикабу <a href="http://play.google.com/store/apps/details?id=online.media.radio_free">http://play.google.com/store/apps/details?id=online.media.radio_free</a> <span>4 января</span></td>
+											<td>Web-сайт / Seo</td>
+											<td><a href="#"><i class="fa fa-wrench"></i></a></td>
+											<td>Прикольная площадка, но не соответсвутет нашему проекту, поэтому сорри.</td>
+											<td><div class="not-complite"><i class="fa fa-times"></i></div></td>
+										</tr>
+										<tr>
+											<td>3.</td>
+											<td>Радио онлайн <a href="http://play.google.com/store/apps/details?id=online.media.radio_free">http://play.google.com/store/apps/details?id=online.media.radio_free</a> <span>3 августа 2018</span></td>
+											<td>Web-сайт / Мобильное Приложение</td>
+											<td><a href="#"><i class="fa fa-wrench"></i></a></td>
+											<td>Одобряю</td>
+											<td><div class="complite"><i class="fa fa-check"></i></div></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="no-playground">Пока нет добавленных площадок, но можно сейчас <a href="#">добавить площадку</a></div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- end section my-playground -->
+
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12">
+					<h2 class="footer-main-title">FOOTER</h2>
+				</div>
+
+				<div class="col-md-3">
+					<div class="footer-logo"><a href="/"><span>Ad</span>Bobr</a></div>
+					<p class="footer-text">Партнерская программа <br>с оплатой за действия. <br>@ 2019 Сделано с любовью.</p>
+					<div class="footer-web"><a href="#"><img src="img/webmoney.png" alt=""></a></div>
+				</div>
+				<div class="col-md-9">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-6 col-sm-4 col-xl">
+								<h3 class="footer-title">Меню</h3>
+								<ul class="footer-ul">
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Принципы</a></li>
+									<li><a href="#">Правила</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-sm-4 col-xl">
+								<h3 class="footer-title">Офферы</h3>
+								<ul class="footer-ul">
+									<li><a href="#">Подбор оффера</a></li>
+									<li><a href="#">Мои офферы</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-sm-4 col-xl">
+								<h3 class="footer-title">Вебмастера</h3>
+								<ul class="footer-ul">
+									<li><a href="#">Мои площадки</a></li>
+									<li><a href="#">Финансы и выплаты</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Служба поддержки</a></li>
+									<li><a href="#">Политика конфиденциальности</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-sm-4 col-xl">
+								<h3 class="footer-title">Выплаты</h3>
+								<div class="payment">
+									<div class="payment-link"><a href="#"><img src="img/webmoney-footer.png" alt=""></a></div>
+									<div class="payment-link"><a href="#"><img src="img/yam.png" alt=""></a></div>
+									<div class="payment-link"><a href="#"><img src="img/qiwi.png" alt=""></a></div>
+									<div class="payment-link"><a href="#"><img src="img/ym.png" alt=""></a></div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-xl">
+								<h3 class="footer-title">Бобры здесь</h3>
+								<div class="social">
+									<a href="#" class="social-telegram"><i class="fa fa-telegram"></i></a>
+									<a href="#"><i class="fa fa-vk"></i></a>
+									<p class="social-text">Форум вебмастеров</p>
+									<p class="social-text"><a href="#">Forum.searchengines</a></p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>
